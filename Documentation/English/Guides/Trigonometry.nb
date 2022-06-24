@@ -1,0 +1,854 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     36478,        846]
+NotebookOptionsPosition[     25997,        645]
+NotebookOutlinePosition[     26728,        667]
+CellTagsIndexPosition[     26685,        664]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["??", "HistoryData",
+  CellTags->"New",ExpressionUUID->"9a385513-b71d-4474-918f-2573c74da4e9"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified",ExpressionUUID->"fdd81c2e-c0b4-4a8d-9138-f1b7fd7aa73e"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete",ExpressionUUID->"22ee3e6f-512d-491b-a383-7c1be2108904"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised",ExpressionUUID->"cfa125b1-ae74-4d10-8a85-0e8d42df8394"]
+}], "History",
+ CellID->496326155,ExpressionUUID->"f7d50f17-308a-4199-b9e9-fc3aa480b353"],
+
+Cell["Created by: stover on 06-21-2022 04:01:05", "AuthorDate",
+ CellID->1470609622,ExpressionUUID->"8394ce4a-56ad-4320-8463-cc620e008e41"],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->927202137,ExpressionUUID->"b125b1e2-f0bc-4c8e-a816-4e812f327c55"],
+
+Cell["Guide", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->1344973927,ExpressionUUID->"84d62f6d-a9fa-4bad-9baf-986d3e11dbe5"],
+
+Cell["TheRealCStover/Trigonometry", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->563922767,ExpressionUUID->"b27e3e5a-0e90-4c7b-b9c7-01316c7d4b3f"],
+
+Cell["TheRealCStover`Trigonometry`", "Categorization",
+ CellLabel->"Context",
+ CellID->1004610758,ExpressionUUID->"9acc3764-2203-485b-a8d7-c21046359e3d"],
+
+Cell["TheRealCStover/Trigonometry/guide/Trigonometry", "Categorization",
+ CellLabel->"URI",
+ CellID->976576992,ExpressionUUID->"d93a6542-beb0-4eba-852e-74eb8148a105"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->111990523,ExpressionUUID->"26f7339b-30cc-4f08-a930-0e111a245fe7"],
+
+Cell["math", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787506416252*^9}},
+ CellID->1029045289,ExpressionUUID->"ea5b71a6-7cc5-477a-abd3-3044bb267129"],
+
+Cell["trig", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787507904847*^9}},
+ CellID->1170565854,ExpressionUUID->"5365f157-848c-4934-814a-1433f2674df5"],
+
+Cell["trigonometry", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.8647875111212683`*^9}},
+ CellID->525267228,ExpressionUUID->"0c8ce408-e048-4a50-af1e-95bb3666153f"],
+
+Cell["sin", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787512856716*^9}},
+ CellID->1968174815,ExpressionUUID->"8e7ccacb-7a28-4ddf-ad8c-e476742530d3"],
+
+Cell["sine", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787527870411*^9}},
+ CellID->1177165484,ExpressionUUID->"e862f155-c19f-4e60-9c7b-b0def6975b2a"],
+
+Cell["sinh", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787528678281*^9}},
+ CellID->539392596,ExpressionUUID->"c59b7d82-61a2-47f4-8e28-1defb9b66dd7"],
+
+Cell["cos", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787516287629*^9}},
+ CellID->1906190426,ExpressionUUID->"3a28324e-e519-4d5f-9e34-a1fe8b3a76fa"],
+
+Cell["cosine", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787529968782*^9}},
+ CellID->764753278,ExpressionUUID->"46f5a768-f8e3-4ae3-9ba4-ff9f92631aac"],
+
+Cell["sinh", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787531045925*^9}},
+ CellID->540088439,ExpressionUUID->"7031d7e1-a6f4-471c-86b8-791f5b4a0fea"],
+
+Cell["tan", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.86478751954436*^9}},
+ CellID->992739204,ExpressionUUID->"8ef86d0b-b12a-41d9-b358-f35dddb587a0"],
+
+Cell["tangent", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.8647875327518044`*^9}},
+ CellID->1890172230,ExpressionUUID->"74de0c7c-fc36-4a5c-be2b-d6e029f077de"],
+
+Cell["tanh", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787535183704*^9}},
+ CellID->1297683295,ExpressionUUID->"31e7a646-fc63-4f15-9949-8ab9a702e8b3"],
+
+Cell["sec", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787538008113*^9}},
+ CellID->242818182,ExpressionUUID->"a45a2fda-7999-4e3f-bf15-c723316c8aef"],
+
+Cell["secant", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787541447996*^9}},
+ CellID->391033672,ExpressionUUID->"0fd32228-1951-47ec-80cf-b9e8f4f5f127"],
+
+Cell["sech", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787543420908*^9}},
+ CellID->56223805,ExpressionUUID->"13194df6-7ee6-402a-b619-79a446da960d"],
+
+Cell["csc", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787545415539*^9}},
+ CellID->572627603,ExpressionUUID->"f458b8f2-4172-493e-a4b0-3325f350adce"],
+
+Cell["cosecant", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787548728651*^9}},
+ CellID->1415102699,ExpressionUUID->"e9503da3-8c38-4cb2-aea1-8dc3fe92d813"],
+
+Cell["csch", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.8647875515593767`*^9}},
+ CellID->688030658,ExpressionUUID->"3229b37b-626b-4d8e-9a67-47c944fa152e"],
+
+Cell["cot", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787568670931*^9}},
+ CellID->1970395716,ExpressionUUID->"d276e32c-23d0-4ad1-9f5b-d89e23ede577"],
+
+Cell["cotan", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.8647875695090103`*^9}},
+ CellID->1986054761,ExpressionUUID->"81e4523e-f386-4c07-a4bc-026c2b0e4611"],
+
+Cell["cotangent", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.86478756293576*^9}},
+ CellID->266851246,ExpressionUUID->"dbaa2a97-a06d-41d5-bc2f-1a1cc92f606d"],
+
+Cell["coth", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.8647875779503117`*^9}},
+ CellID->1952402353,ExpressionUUID->"7be99486-9ab5-4b3c-8fb1-5631c2945ec2"],
+
+Cell["arcsin", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787586596468*^9}},
+ CellID->1012731694,ExpressionUUID->"cb5e6036-a8d3-48fd-b08c-e6b92ce1d9cf"],
+
+Cell["arcsine", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.86478759090221*^9}},
+ CellID->1829927318,ExpressionUUID->"361bdcab-a2f4-430f-8906-bb2d90c8aada"],
+
+Cell["inverse sine", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787595307761*^9}},
+ CellID->926552524,ExpressionUUID->"0d68e3a3-2d89-4476-9ce7-c63ddd54d411"],
+
+Cell["arccos", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787521038756*^9}, {
+  3.864787602319397*^9, 3.864787619582663*^9}},
+ CellID->1613423895,ExpressionUUID->"6a92779d-6b74-4343-81dd-3e627023cd70"],
+
+Cell["arccosine", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787521038756*^9}, {
+  3.864787602319397*^9, 3.864787629290945*^9}},
+ CellID->111548026,ExpressionUUID->"c03eb24b-fa6e-4f18-9e11-2e21acd74aab"],
+
+Cell["inverse cosine", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787521038756*^9}, {
+  3.864787602319397*^9, 3.864787631711725*^9}},
+ CellID->34449151,ExpressionUUID->"3a91a150-6aec-48a7-ab46-64607fcafa7c"],
+
+Cell["arctan", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787521038756*^9}, {
+  3.864787602319397*^9, 3.864787641763378*^9}},
+ CellID->300581067,ExpressionUUID->"2157db07-66b7-4313-a6f6-858a3419a19f"],
+
+Cell["arctangent", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787521038756*^9}, {
+  3.864787602319397*^9, 3.8647876434854193`*^9}},
+ CellID->2015103608,ExpressionUUID->"0bfd3bcc-2a48-417e-9748-5627c87e3510"],
+
+Cell["inverse tangent", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787521038756*^9}, {
+  3.864787602319397*^9, 3.8647876456519938`*^9}},
+ CellID->2126965745,ExpressionUUID->"2c994a32-605c-4c21-ac1c-e3ea406f1f23"],
+
+Cell["arcsec", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787521038756*^9}, {
+  3.864787602319397*^9, 3.8647876563462677`*^9}},
+ CellID->738236333,ExpressionUUID->"6e68a1cf-0e93-418d-800c-870792a60a9a"],
+
+Cell["arcsecant", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787521038756*^9}, {
+  3.864787602319397*^9, 3.864787659930566*^9}},
+ CellID->1525020012,ExpressionUUID->"a2d0fe87-70e2-4b14-89a6-a6cd52d6a0d8"],
+
+Cell["inverse secant", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787521038756*^9}, {
+  3.864787602319397*^9, 3.864787665450488*^9}},
+ CellID->794014739,ExpressionUUID->"eda53f4f-0900-4b95-b681-be3161cf33b1"],
+
+Cell["arccsc", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787521038756*^9}, {
+  3.864787602319397*^9, 3.8647876701544943`*^9}},
+ CellID->542335915,ExpressionUUID->"0f01be40-02ec-41f9-98e1-78c801b6aaa0"],
+
+Cell["arccosecant", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787521038756*^9}, {
+  3.864787602319397*^9, 3.8647876434854193`*^9}, {3.8647876738416758`*^9, 
+  3.8647876747632523`*^9}},
+ CellID->1119125537,ExpressionUUID->"20595d3f-2d9c-49e3-8c71-b88b07340621"],
+
+Cell["inverse cosecant", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787521038756*^9}, {
+  3.864787602319397*^9, 3.8647876456519938`*^9}, {3.864787676122869*^9, 
+  3.864787677249638*^9}},
+ CellID->1481119933,ExpressionUUID->"7bc8d4e2-d1dc-406c-9b7c-2aa0d6b0f0be"],
+
+Cell["arccotan", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787521038756*^9}, {
+   3.864787602319397*^9, 3.864787641763378*^9}, {3.864787682057535*^9, 
+   3.8647876826257467`*^9}, 3.864787728913879*^9},
+ CellID->1317332310,ExpressionUUID->"c6f313fd-ad02-41c3-b28e-8a49f5e9f323"],
+
+Cell["arccotangent", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787521038756*^9}, {
+  3.864787602319397*^9, 3.8647876434854193`*^9}, {3.8647876859699287`*^9, 
+  3.8647876861776247`*^9}},
+ CellID->1995217247,ExpressionUUID->"3e56310c-0ad5-41f6-a3c7-16cd9b235002"],
+
+Cell["inverse cotangent", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787521038756*^9}, {
+   3.864787602319397*^9, 3.8647876456519938`*^9}, {3.864787689322455*^9, 
+   3.864787689434608*^9}, 3.864787735643621*^9},
+ CellID->659122424,ExpressionUUID->"5d9b9e71-ed66-4158-9524-46e3c518ff8f"],
+
+Cell["(* put new functions here *)", "Keywords",
+ CellChangeTimes->{{3.864787504096188*^9, 3.864787521038756*^9}, {
+  3.864787602319397*^9, 3.8647876456519938`*^9}, {3.864787689322455*^9, 
+  3.864787689434608*^9}, {3.864787736087924*^9, 3.8647877420885677`*^9}},
+ CellID->911265347,ExpressionUUID->"464bccfe-ed2c-4a17-a775-dc222c6de510"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Trigonometry", "GuideTitle",
+ CellID->1478362932,ExpressionUUID->"7a7758d5-e280-4b25-bef0-d968bf05dd18"],
+
+Cell["\<\
+There are many additional trigonometric functions (both circular and \
+hyperbolic, and their inverses) beyond the ones typically taught in a \
+standard trig class. The functions contained in Trigonometry are an attempt \
+to collect these functions into one easy-to-use package.\
+\>", "GuideAbstract",
+ CellChangeTimes->{{3.8647873117356157`*^9, 3.86478740493216*^9}},
+ CellID->460002334,ExpressionUUID->"962f0241-6e81-4d0d-b5e5-f7265a43496c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Circular Trigonometry", "GuideFunctionsSection",
+ CellChangeTimes->{
+  3.86501903540163*^9, {3.865019127611739*^9, 3.865019144035075*^9}},
+ CellID->1822653646,ExpressionUUID->"2a18f318-732d-4223-aff5-a3b2626643d8"],
+
+Cell[CellGroupData[{
+
+Cell["Functions", "GuideFunctionsSubsection",
+ CellChangeTimes->{
+  3.86501903540163*^9, {3.865019135514409*^9, 3.865019140690928*^9}},
+ CellID->559188266,ExpressionUUID->"59ef0495-e109-4652-a5be-7ba6183630b5"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["Versine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Versine"]], 
+  "InlineFormula",ExpressionUUID->"6d5d0368-b8e0-4598-be37-196274310975"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["Vercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Vercosine"]], 
+  "InlineFormula",ExpressionUUID->"affa9aa5-5170-47d6-91b9-d0373269bfee"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["Coversine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Coversine"]], 
+  "InlineFormula",ExpressionUUID->"c24ddd85-bb81-4f35-9f4d-91244694f4e5"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["Covercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Covercosine"]], 
+  "InlineFormula",ExpressionUUID->"d338cd40-6896-45a5-8a49-5161434df91b"]
+}], "InlineGuideFunctionListing",
+ CellChangeTimes->{{3.8650183816503077`*^9, 3.865018382482381*^9}, {
+   3.865018653001919*^9, 3.865018719176098*^9}, {3.865018749685609*^9, 
+   3.865018757462768*^9}, {3.865018803453314*^9, 3.865018808069219*^9}, {
+   3.865020049224346*^9, 3.86502006274168*^9}, 3.865022184471464*^9, {
+   3.865022394236717*^9, 3.8650224027243023`*^9}, {3.865022678346678*^9, 
+   3.8650227008459177`*^9}, {3.865023201310545*^9, 3.865023204446347*^9}, {
+   3.8650235018186493`*^9, 3.865023506675118*^9}},
+ CellID->1345418358,ExpressionUUID->"8c9d1296-c21a-42d6-8441-abfb47984cee"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["Haversine",
+   BaseStyle->"Link"]], "InlineFormula",ExpressionUUID->
+  "5b927eaf-293e-4ee7-9a08-0afcce0c6d27"],
+ " (built-in) \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["Havercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Havercosine"]], 
+  "InlineFormula",ExpressionUUID->"5d113142-d564-4dd8-89c0-488b619c37bd"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["Hacoversine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Hacoversine"]], 
+  "InlineFormula",ExpressionUUID->"37553b51-b5e7-4ad7-9995-ecca1f3bbe30"],
+ " (or ",
+ Cell[BoxData[
+  ButtonBox["Cohaversine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Cohaversine"]], 
+  "InlineFormula",ExpressionUUID->"51be9684-3360-4785-aefb-cb7684734c40"],
+ ") \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["Hacovercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Hacovercosine"]], 
+  "InlineFormula",ExpressionUUID->"e47bf2dc-2829-40f0-9744-4af8d0019047"],
+ " (or ",
+ Cell[BoxData[
+  ButtonBox["Cohavercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Cohavercosine"]], 
+  "InlineFormula",ExpressionUUID->"b7dd37d4-3863-4d0b-900f-0d436cefd7a9"],
+ ")"
+}], "InlineGuideFunctionListing",
+ CellChangeTimes->{{3.8650183816503077`*^9, 3.865018382482381*^9}, {
+   3.865018653001919*^9, 3.865018719176098*^9}, {3.865018749685609*^9, 
+   3.865018757462768*^9}, {3.865018803453314*^9, 3.865018808069219*^9}, {
+   3.865020049224346*^9, 3.86502006274168*^9}, 3.865022184471464*^9, {
+   3.865022394236717*^9, 3.8650224027243023`*^9}, {3.865022678346678*^9, 
+   3.8650227008459177`*^9}, {3.865023207910673*^9, 3.865023216185618*^9}, {
+   3.865023519128098*^9, 3.865023525156599*^9}, {3.865024067233678*^9, 
+   3.865024069248171*^9}},
+ CellID->1729405018,ExpressionUUID->"a6220962-45e6-4915-9e48-625944e513ce"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["Exsecant",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Exsecant"]], 
+  "InlineFormula",ExpressionUUID->"68a3caf2-d848-4e9a-b4f9-9aed29ac14ba"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["Excosecant",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Excosecant"]], 
+  "InlineFormula",ExpressionUUID->"b0be7363-df58-4a11-8e2d-2b73543c908d"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["Chord",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Chord"]], 
+  "InlineFormula",ExpressionUUID->"b5943e06-2d92-44fd-8d1b-450e6de8644f"]
+}], "InlineGuideFunctionListing",
+ CellChangeTimes->{{3.8650183816503077`*^9, 3.865018382482381*^9}, {
+   3.865018653001919*^9, 3.865018719176098*^9}, {3.865018749685609*^9, 
+   3.865018757462768*^9}, {3.865018803453314*^9, 3.865018808069219*^9}, {
+   3.865020049224346*^9, 3.86502006274168*^9}, 3.865022184471464*^9, {
+   3.865022394236717*^9, 3.8650224027243023`*^9}, {3.865022678346678*^9, 
+   3.8650227008459177`*^9}, {3.865023207910673*^9, 3.865023210511361*^9}, {
+   3.86502325790969*^9, 3.865023261109027*^9}},
+ CellID->1992527970,ExpressionUUID->"b94a312c-1637-4d24-aa55-aaaa098dc9c4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Inverses", "GuideFunctionsSubsection",
+ CellChangeTimes->{{3.86501711427248*^9, 3.865017118104536*^9}, {
+   3.8650171663830853`*^9, 3.865017167415106*^9}, 3.865019138082423*^9},
+ CellID->2023525079,ExpressionUUID->"d98a8255-06bb-4749-81e7-cd956d4afb2e"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["InverseVersine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/InverseVersine"]], 
+  "InlineFormula",ExpressionUUID->"79641c92-2d81-45dc-a54d-2698008c1bd5"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["InverseVercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/InverseVercosine"]], 
+  "InlineFormula",ExpressionUUID->"8182e650-87ab-43e7-9aa2-81871224f611"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["InverseCoversine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/InverseCoversine"]], 
+  "InlineFormula",ExpressionUUID->"bb80286e-875b-40c7-adb6-e6ef1955e630"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["InverseCovercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/InverseCovercosine"]], 
+  "InlineFormula",ExpressionUUID->"10580ba4-936a-4647-be8a-5490c1dc1f7e"],
+ " "
+}], "InlineGuideFunctionListing",
+ CellChangeTimes->{{3.865020107335837*^9, 3.865020196291738*^9}, {
+  3.865020238986792*^9, 3.865020271769902*^9}, {3.865022715269177*^9, 
+  3.865022719261681*^9}, {3.865023540562346*^9, 3.865023579078801*^9}},
+ CellID->1041575078,ExpressionUUID->"ac4eb144-1863-40d6-9308-c24fab05fd76"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["InverseHaversine",
+   BaseStyle->"Link"]], "InlineFormula",ExpressionUUID->
+  "ea166ba3-db14-4a38-8468-3883c53ee7f3"],
+ " (built-in) \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["InverseHavercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/InverseHavercosine"]], 
+  "InlineFormula",ExpressionUUID->"89d55123-a5b0-4370-bd0e-0152b17dd557"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["InverseHacoversine",
+   BaseStyle->"Link",
+   ButtonData->
+    "paclet:TheRealCStover/Trigonometry/ref/InverseHacoversine (or"]], 
+  "InlineFormula",ExpressionUUID->"f06d44cd-6f50-4474-b641-b25e0ded5125"],
+ " (or ",
+ Cell[BoxData[
+  ButtonBox[
+   RowBox[{"InverseCohaversine", ")"}],
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/InverseCohaversine)"]],
+   "InlineFormula",ExpressionUUID->"1d2aceb9-e668-4eba-9add-0e7cd88d9064"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["InverseHacovercosine",
+   BaseStyle->"Link",
+   ButtonData->
+    "paclet:TheRealCStover/Trigonometry/ref/InverseHacovercosine (or"]], 
+  "InlineFormula",ExpressionUUID->"b8b6aaec-66e0-47aa-8661-c257fd316bfe"],
+ " (or ",
+ Cell[BoxData[
+  ButtonBox[
+   RowBox[{"InverseCohavercosine", ")"}],
+   BaseStyle->"Link",
+   ButtonData->
+    "paclet:TheRealCStover/Trigonometry/ref/InverseCohavercosine)"]], 
+  "InlineFormula",ExpressionUUID->"32990991-aef2-48b7-b51d-ad4774770534"],
+ " "
+}], "InlineGuideFunctionListing",
+ CellChangeTimes->{{3.865020107335837*^9, 3.865020196291738*^9}, {
+  3.865020238986792*^9, 3.865020271769902*^9}, {3.865022715269177*^9, 
+  3.865022719261681*^9}, {3.865023540562346*^9, 3.865023608526751*^9}, {
+  3.865024072656365*^9, 3.8650240740649443`*^9}},
+ CellID->529654979,ExpressionUUID->"660ebd30-78ac-4216-998b-61f75d849ab8"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["InverseExsecant",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/InverseExsecant"]], 
+  "InlineFormula",ExpressionUUID->"755a25b5-8bf4-4b0b-b6bc-afbc2a117592"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["InverseExcosecant",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/InvereseExcosecant"]], 
+  "InlineFormula",ExpressionUUID->"ab2fe400-720b-4e65-876a-1caca4bcd5b4"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["InverseChord",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/InverseChord"]], 
+  "InlineFormula",ExpressionUUID->"bac28688-b832-404c-871f-4d154fb927eb"]
+}], "InlineGuideFunctionListing",
+ CellChangeTimes->{{3.865020107335837*^9, 3.865020196291738*^9}, {
+  3.865020238986792*^9, 3.865020271769902*^9}, {3.865022715269177*^9, 
+  3.865022719261681*^9}, {3.865023577556744*^9, 3.865023617264979*^9}},
+ CellID->311286953,ExpressionUUID->"f6c7ca4e-2205-4fc0-a3ac-b6a866c9d14b"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Hyperbolic Trigonometry", "GuideFunctionsSection",
+ CellChangeTimes->{
+  3.86501903540163*^9, {3.865019127611739*^9, 3.865019159298546*^9}},
+ CellID->2072058386,ExpressionUUID->"23d4436a-b349-4513-abeb-aca0143070fc"],
+
+Cell[CellGroupData[{
+
+Cell["Functions", "GuideFunctionsSubsection",
+ CellChangeTimes->{
+  3.86501903540163*^9, {3.865019135514409*^9, 3.865019140690928*^9}},
+ CellID->1905933601,ExpressionUUID->"d518fb98-4b93-4037-b6b4-d8d0e72a42d3"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["blah",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/blah"]], 
+  "InlineFormula",ExpressionUUID->"0cdff22c-6333-4eae-a18f-0195d2b993dd"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["blah",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/blah"]], 
+  "InlineFormula",ExpressionUUID->"72fa7549-1a7d-4ef1-877b-553e4a241290"]
+}], "InlineGuideFunctionListing",
+ CellChangeTimes->{{3.865019179627775*^9, 3.865019183138154*^9}},
+ CellID->240034133,ExpressionUUID->"eef949b4-19e4-4762-85b2-ae170e7ac516"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Inverses", "GuideFunctionsSubsection",
+ CellChangeTimes->{{3.86501711427248*^9, 3.865017118104536*^9}, {
+   3.8650171663830853`*^9, 3.865017167415106*^9}, 3.865019138082423*^9},
+ CellID->635220517,ExpressionUUID->"ad66078d-9183-4f2a-9043-74f438a54ada"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["blah",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/blah"]], 
+  "InlineFormula",ExpressionUUID->"3df8b8c8-bd65-49af-a6c2-f3c8dd6efa02"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["blah",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/blah"]], 
+  "InlineFormula",ExpressionUUID->"a8d44e25-e84c-425f-9f1a-a9708a81c039"]
+}], "InlineGuideFunctionListing",
+ CellChangeTimes->{{3.865019179627775*^9, 3.865019183138154*^9}},
+ CellID->1237894144,ExpressionUUID->"139cb2d0-0191-4d92-9872-dced434aa79f"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Parabolic Trigonometry", "GuideFunctionsSection",
+ CellChangeTimes->{
+  3.86501903540163*^9, {3.865019127611739*^9, 3.865019159298546*^9}, {
+   3.865019200953742*^9, 3.865019202169363*^9}},
+ CellID->465306072,ExpressionUUID->"8f1fd92e-d213-48f9-b158-1ebdc144a8f4"],
+
+Cell[CellGroupData[{
+
+Cell["Functions", "GuideFunctionsSubsection",
+ CellChangeTimes->{
+  3.86501903540163*^9, {3.865019135514409*^9, 3.865019140690928*^9}},
+ CellID->2011185535,ExpressionUUID->"ff27b962-d59c-4d56-86e9-4dc4ccb53f9d"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["blah",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/blah"]], 
+  "InlineFormula",ExpressionUUID->"76fadd6e-fec3-4a00-809e-ba7c89db1d02"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["blah",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/blah"]], 
+  "InlineFormula",ExpressionUUID->"0fb6375f-bf24-42ed-8a07-de4a5d7c052d"]
+}], "InlineGuideFunctionListing",
+ CellChangeTimes->{{3.865019179627775*^9, 3.865019183138154*^9}},
+ CellID->602682965,ExpressionUUID->"84c2fd77-b1dc-460d-8405-8b04ee13555c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Inverses", "GuideFunctionsSubsection",
+ CellChangeTimes->{{3.86501711427248*^9, 3.865017118104536*^9}, {
+   3.8650171663830853`*^9, 3.865017167415106*^9}, 3.865019138082423*^9},
+ CellID->1759713503,ExpressionUUID->"8ed5ba88-e04d-427b-b171-277ad1115080"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["blah",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/blah"]], 
+  "InlineFormula",ExpressionUUID->"e993333a-513a-42d1-af7f-84dbde8d6331"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["blah",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/blah"]], 
+  "InlineFormula",ExpressionUUID->"417d1825-70b8-4408-9930-60ca8f60e7ce"]
+}], "InlineGuideFunctionListing",
+ CellChangeTimes->{{3.865019179627775*^9, 3.865019183138154*^9}},
+ CellID->360058437,ExpressionUUID->"82c650b8-c053-40f8-8e20-caffea3cfabf"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tech Notes", "GuideTutorialsSection",
+ CellID->1635657656,ExpressionUUID->"5a5851c5-bae4-473f-bbc6-4ce9f96911e0"],
+
+Cell["XXXX", "GuideTutorial",
+ CellID->560059145,ExpressionUUID->"b84ca6e0-0a22-4c7e-9b80-a7feb8b4bfa7"],
+
+Cell["XXXX", "GuideTutorial",
+ CellID->493225214,ExpressionUUID->"d7ad07d3-ecf3-4db0-8941-124af8f6fd42"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "GuideMoreAboutSection",
+ CellChangeTimes->{{3.8430423939366693`*^9, 3.843042395176153*^9}},
+ CellID->349294278,ExpressionUUID->"4af7bff8-a365-4d12-a4e1-27baef24097a"],
+
+Cell["XXXX", "GuideMoreAbout",
+ CellID->1516123095,ExpressionUUID->"fccd2224-e6d2-4249-901a-5df007706ab2"],
+
+Cell["XXXX", "GuideMoreAbout",
+ CellID->1587386010,ExpressionUUID->"2ba8746e-817b-453c-b51c-2c97b18acee1"]
+}, Open  ]],
+
+Cell["Related Links", "GuideRelatedLinksSection",
+ CellID->1007323389,ExpressionUUID->"7fd097b5-c913-44d4-aab6-28b75ce5e81f"]
+},
+WindowSize->{700, 770},
+WindowMargins->{{Automatic, 218}, {Automatic, 0}},
+TaggingRules->{
+ "DocuToolsSettingsInternal" -> {
+   "$PacletVersion" -> "0.10.2121", "$MVersion" -> "12", "$FlaggedVersion" -> 
+    11.3}, "WelcomeScreenSettings" -> {"FEStarting" -> False}, "Author" -> 
+  "stover", "CreationDate" -> "06-21-2022 04:01:05"},
+FrontEndVersion->"13.0 for Mac OS X x86 (64-bit) (December 9, 2021)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "GuidePageStylesExt.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"d52a4bab-7c9d-488d-877d-86bdf4083bdd"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 598, 14, 24, "History",ExpressionUUID->"f7d50f17-308a-4199-b9e9-fc3aa480b353",
+ CellID->496326155],
+Cell[1159, 36, 139, 1, 20, "AuthorDate",ExpressionUUID->"8394ce4a-56ad-4320-8463-cc620e008e41",
+ CellID->1470609622],
+Cell[CellGroupData[{
+Cell[1323, 41, 122, 1, 29, "CategorizationSection",ExpressionUUID->"b125b1e2-f0bc-4c8e-a816-4e812f327c55",
+ CellID->927202137],
+Cell[1448, 44, 134, 2, 30, "Categorization",ExpressionUUID->"84d62f6d-a9fa-4bad-9baf-986d3e11dbe5",
+ CellID->1344973927],
+Cell[1585, 48, 155, 2, 30, "Categorization",ExpressionUUID->"b27e3e5a-0e90-4c7b-b9c7-01316c7d4b3f",
+ CellID->563922767],
+Cell[1743, 52, 153, 2, 30, "Categorization",ExpressionUUID->"9acc3764-2203-485b-a8d7-c21046359e3d",
+ CellID->1004610758],
+Cell[1899, 56, 166, 2, 30, "Categorization",ExpressionUUID->"d93a6542-beb0-4eba-852e-74eb8148a105",
+ CellID->976576992]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2102, 63, 110, 1, 29, "KeywordsSection",ExpressionUUID->"26f7339b-30cc-4f08-a930-0e111a245fe7",
+ CellID->111990523],
+Cell[2215, 66, 166, 2, 19, "Keywords",ExpressionUUID->"ea5b71a6-7cc5-477a-abd3-3044bb267129",
+ CellID->1029045289],
+Cell[2384, 70, 166, 2, 19, "Keywords",ExpressionUUID->"5365f157-848c-4934-814a-1433f2674df5",
+ CellID->1170565854],
+Cell[2553, 74, 175, 2, 19, "Keywords",ExpressionUUID->"0c8ce408-e048-4a50-af1e-95bb3666153f",
+ CellID->525267228],
+Cell[2731, 78, 165, 2, 19, "Keywords",ExpressionUUID->"8e7ccacb-7a28-4ddf-ad8c-e476742530d3",
+ CellID->1968174815],
+Cell[2899, 82, 166, 2, 19, "Keywords",ExpressionUUID->"e862f155-c19f-4e60-9c7b-b0def6975b2a",
+ CellID->1177165484],
+Cell[3068, 86, 165, 2, 19, "Keywords",ExpressionUUID->"c59b7d82-61a2-47f4-8e28-1defb9b66dd7",
+ CellID->539392596],
+Cell[3236, 90, 165, 2, 19, "Keywords",ExpressionUUID->"3a28324e-e519-4d5f-9e34-a1fe8b3a76fa",
+ CellID->1906190426],
+Cell[3404, 94, 167, 2, 19, "Keywords",ExpressionUUID->"46f5a768-f8e3-4ae3-9ba4-ff9f92631aac",
+ CellID->764753278],
+Cell[3574, 98, 165, 2, 19, "Keywords",ExpressionUUID->"7031d7e1-a6f4-471c-86b8-791f5b4a0fea",
+ CellID->540088439],
+Cell[3742, 102, 163, 2, 19, "Keywords",ExpressionUUID->"8ef86d0b-b12a-41d9-b358-f35dddb587a0",
+ CellID->992739204],
+Cell[3908, 106, 171, 2, 19, "Keywords",ExpressionUUID->"74de0c7c-fc36-4a5c-be2b-d6e029f077de",
+ CellID->1890172230],
+Cell[4082, 110, 166, 2, 19, "Keywords",ExpressionUUID->"31e7a646-fc63-4f15-9949-8ab9a702e8b3",
+ CellID->1297683295],
+Cell[4251, 114, 164, 2, 19, "Keywords",ExpressionUUID->"a45a2fda-7999-4e3f-bf15-c723316c8aef",
+ CellID->242818182],
+Cell[4418, 118, 167, 2, 19, "Keywords",ExpressionUUID->"0fd32228-1951-47ec-80cf-b9e8f4f5f127",
+ CellID->391033672],
+Cell[4588, 122, 164, 2, 19, "Keywords",ExpressionUUID->"13194df6-7ee6-402a-b619-79a446da960d",
+ CellID->56223805],
+Cell[4755, 126, 164, 2, 19, "Keywords",ExpressionUUID->"f458b8f2-4172-493e-a4b0-3325f350adce",
+ CellID->572627603],
+Cell[4922, 130, 170, 2, 19, "Keywords",ExpressionUUID->"e9503da3-8c38-4cb2-aea1-8dc3fe92d813",
+ CellID->1415102699],
+Cell[5095, 134, 167, 2, 19, "Keywords",ExpressionUUID->"3229b37b-626b-4d8e-9a67-47c944fa152e",
+ CellID->688030658],
+Cell[5265, 138, 165, 2, 19, "Keywords",ExpressionUUID->"d276e32c-23d0-4ad1-9f5b-d89e23ede577",
+ CellID->1970395716],
+Cell[5433, 142, 169, 2, 19, "Keywords",ExpressionUUID->"81e4523e-f386-4c07-a4bc-026c2b0e4611",
+ CellID->1986054761],
+Cell[5605, 146, 169, 2, 19, "Keywords",ExpressionUUID->"dbaa2a97-a06d-41d5-bc2f-1a1cc92f606d",
+ CellID->266851246],
+Cell[5777, 150, 168, 2, 19, "Keywords",ExpressionUUID->"7be99486-9ab5-4b3c-8fb1-5631c2945ec2",
+ CellID->1952402353],
+Cell[5948, 154, 168, 2, 19, "Keywords",ExpressionUUID->"cb5e6036-a8d3-48fd-b08c-e6b92ce1d9cf",
+ CellID->1012731694],
+Cell[6119, 158, 168, 2, 19, "Keywords",ExpressionUUID->"361bdcab-a2f4-430f-8906-bb2d90c8aada",
+ CellID->1829927318],
+Cell[6290, 162, 173, 2, 19, "Keywords",ExpressionUUID->"0d68e3a3-2d89-4476-9ce7-c63ddd54d411",
+ CellID->926552524],
+Cell[6466, 166, 217, 3, 19, "Keywords",ExpressionUUID->"6a92779d-6b74-4343-81dd-3e627023cd70",
+ CellID->1613423895],
+Cell[6686, 171, 219, 3, 19, "Keywords",ExpressionUUID->"c03eb24b-fa6e-4f18-9e11-2e21acd74aab",
+ CellID->111548026],
+Cell[6908, 176, 223, 3, 19, "Keywords",ExpressionUUID->"3a91a150-6aec-48a7-ab46-64607fcafa7c",
+ CellID->34449151],
+Cell[7134, 181, 216, 3, 19, "Keywords",ExpressionUUID->"2157db07-66b7-4313-a6f6-858a3419a19f",
+ CellID->300581067],
+Cell[7353, 186, 223, 3, 19, "Keywords",ExpressionUUID->"0bfd3bcc-2a48-417e-9748-5627c87e3510",
+ CellID->2015103608],
+Cell[7579, 191, 228, 3, 19, "Keywords",ExpressionUUID->"2c994a32-605c-4c21-ac1c-e3ea406f1f23",
+ CellID->2126965745],
+Cell[7810, 196, 218, 3, 19, "Keywords",ExpressionUUID->"6e68a1cf-0e93-418d-800c-870792a60a9a",
+ CellID->738236333],
+Cell[8031, 201, 220, 3, 19, "Keywords",ExpressionUUID->"a2d0fe87-70e2-4b14-89a6-a6cd52d6a0d8",
+ CellID->1525020012],
+Cell[8254, 206, 224, 3, 19, "Keywords",ExpressionUUID->"eda53f4f-0900-4b95-b681-be3161cf33b1",
+ CellID->794014739],
+Cell[8481, 211, 218, 3, 19, "Keywords",ExpressionUUID->"0f01be40-02ec-41f9-98e1-78c801b6aaa0",
+ CellID->542335915],
+Cell[8702, 216, 277, 4, 19, "Keywords",ExpressionUUID->"20595d3f-2d9c-49e3-8c71-b88b07340621",
+ CellID->1119125537],
+Cell[8982, 222, 278, 4, 19, "Keywords",ExpressionUUID->"7bc8d4e2-d1dc-406c-9b7c-2aa0d6b0f0be",
+ CellID->1481119933],
+Cell[9263, 228, 294, 4, 19, "Keywords",ExpressionUUID->"c6f313fd-ad02-41c3-b28e-8a49f5e9f323",
+ CellID->1317332310],
+Cell[9560, 234, 278, 4, 19, "Keywords",ExpressionUUID->"3e56310c-0ad5-41f6-a3c7-16cd9b235002",
+ CellID->1995217247],
+Cell[9841, 240, 302, 4, 19, "Keywords",ExpressionUUID->"5d9b9e71-ed66-4158-9524-46e3c518ff8f",
+ CellID->659122424],
+Cell[10146, 246, 337, 4, 19, "Keywords",ExpressionUUID->"464bccfe-ed2c-4a17-a775-dc222c6de510",
+ CellID->911265347]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[10520, 255, 110, 1, 77, "GuideTitle",ExpressionUUID->"7a7758d5-e280-4b25-bef0-d968bf05dd18",
+ CellID->1478362932],
+Cell[10633, 258, 452, 7, 59, "GuideAbstract",ExpressionUUID->"962f0241-6e81-4d0d-b5e5-f7265a43496c",
+ CellID->460002334]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11122, 270, 220, 3, 70, "GuideFunctionsSection",ExpressionUUID->"2a18f318-732d-4223-aff5-a3b2626643d8",
+ CellID->1822653646],
+Cell[CellGroupData[{
+Cell[11367, 277, 210, 3, 35, "GuideFunctionsSubsection",ExpressionUUID->"59ef0495-e109-4652-a5be-7ba6183630b5",
+ CellID->559188266],
+Cell[11580, 282, 1529, 32, 25, "InlineGuideFunctionListing",ExpressionUUID->"8c9d1296-c21a-42d6-8441-abfb47984cee",
+ CellID->1345418358],
+Cell[13112, 316, 1990, 45, 44, "InlineGuideFunctionListing",ExpressionUUID->"a6220962-45e6-4915-9e48-625944e513ce",
+ CellID->1729405018],
+Cell[15105, 363, 1281, 26, 25, "InlineGuideFunctionListing",ExpressionUUID->"b94a312c-1637-4d24-aa55-aaaa098dc9c4",
+ CellID->1992527970]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16423, 394, 259, 3, 35, "GuideFunctionsSubsection",ExpressionUUID->"d98a8255-06bb-4749-81e7-cd956d4afb2e",
+ CellID->2023525079],
+Cell[16685, 399, 1314, 29, 44, "InlineGuideFunctionListing",ExpressionUUID->"ac4eb144-1863-40d6-9308-c24fab05fd76",
+ CellID->1041575078],
+Cell[18002, 430, 1854, 46, 63, "InlineGuideFunctionListing",ExpressionUUID->"660ebd30-78ac-4216-998b-61f75d849ab8",
+ CellID->529654979],
+Cell[19859, 478, 1049, 22, 25, "InlineGuideFunctionListing",ExpressionUUID->"f6c7ca4e-2205-4fc0-a3ac-b6a866c9d14b",
+ CellID->311286953]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20957, 506, 222, 3, 70, "GuideFunctionsSection",ExpressionUUID->"23d4436a-b349-4513-abeb-aca0143070fc",
+ CellID->2072058386],
+Cell[CellGroupData[{
+Cell[21204, 513, 211, 3, 35, "GuideFunctionsSubsection",ExpressionUUID->"d518fb98-4b93-4037-b6b4-d8d0e72a42d3",
+ CellID->1905933601],
+Cell[21418, 518, 613, 14, 25, "InlineGuideFunctionListing",ExpressionUUID->"eef949b4-19e4-4762-85b2-ae170e7ac516",
+ CellID->240034133]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22068, 537, 258, 3, 35, "GuideFunctionsSubsection",ExpressionUUID->"ad66078d-9183-4f2a-9043-74f438a54ada",
+ CellID->635220517],
+Cell[22329, 542, 614, 14, 25, "InlineGuideFunctionListing",ExpressionUUID->"139cb2d0-0191-4d92-9872-dced434aa79f",
+ CellID->1237894144]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22992, 562, 270, 4, 70, "GuideFunctionsSection",ExpressionUUID->"8f1fd92e-d213-48f9-b158-1ebdc144a8f4",
+ CellID->465306072],
+Cell[CellGroupData[{
+Cell[23287, 570, 211, 3, 35, "GuideFunctionsSubsection",ExpressionUUID->"ff27b962-d59c-4d56-86e9-4dc4ccb53f9d",
+ CellID->2011185535],
+Cell[23501, 575, 613, 14, 25, "InlineGuideFunctionListing",ExpressionUUID->"84c2fd77-b1dc-460d-8405-8b04ee13555c",
+ CellID->602682965]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24151, 594, 259, 3, 35, "GuideFunctionsSubsection",ExpressionUUID->"8ed5ba88-e04d-427b-b171-277ad1115080",
+ CellID->1759713503],
+Cell[24413, 599, 613, 14, 25, "InlineGuideFunctionListing",ExpressionUUID->"82c650b8-c053-40f8-8e20-caffea3cfabf",
+ CellID->360058437]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25075, 619, 119, 1, 72, "GuideTutorialsSection",ExpressionUUID->"5a5851c5-bae4-473f-bbc6-4ce9f96911e0",
+ CellID->1635657656],
+Cell[25197, 622, 104, 1, 22, "GuideTutorial",ExpressionUUID->"b84ca6e0-0a22-4c7e-9b80-a7feb8b4bfa7",
+ CellID->560059145],
+Cell[25304, 625, 104, 1, 22, "GuideTutorial",ExpressionUUID->"d7ad07d3-ecf3-4db0-8941-124af8f6fd42",
+ CellID->493225214]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25445, 631, 190, 2, 72, "GuideMoreAboutSection",ExpressionUUID->"4af7bff8-a365-4d12-a4e1-27baef24097a",
+ CellID->349294278],
+Cell[25638, 635, 106, 1, 22, "GuideMoreAbout",ExpressionUUID->"fccd2224-e6d2-4249-901a-5df007706ab2",
+ CellID->1516123095],
+Cell[25747, 638, 106, 1, 22, "GuideMoreAbout",ExpressionUUID->"2ba8746e-817b-453c-b51c-2c97b18acee1",
+ CellID->1587386010]
+}, Open  ]],
+Cell[25868, 642, 125, 1, 72, "GuideRelatedLinksSection",ExpressionUUID->"7fd097b5-c913-44d4-aab6-28b75ce5e81f",
+ CellID->1007323389]
+}
+]
+*)
+
