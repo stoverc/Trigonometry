@@ -11,7 +11,7 @@
       This Paclet gathers nearly a dozen little-used circular trig functions, their hyperbolic analogues, and the inverses of all of these, into a single, easy-to-use collection that works seamlessly with the 6,000+ Wolfram Language functions. Future iterations may also include various definitions of so-called <i>parabolic trig functions</i>, as well as some other juicy trig-related tidbits that prove useful
     </td>
     <td valign = "top">
-      <img src = "https://github.com/stoverc/Trigonometry/blob/main/img/Diagram1Trans.png?raw=true" width="1500px">
+      <img src = "https://github.com/stoverc/Trigonometry/blob/main/img/Diagram1Trans.png?raw=true" height=100%>
     </td>
   </tr>
  </table>
