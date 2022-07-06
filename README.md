@@ -21,7 +21,7 @@
 ## TODO
 * Fill in the (many!) doc pages for the ciruclar functions and their inverses.
 * Implement inverse hyperbolic functions, and check the hyperbolic functions for accuracy.
-* Consider best implementation of <code>VerCofHaf</code> as shown in image.
+* Consider best implementation of <code>VerCofHaf</code> as shown in image [link](https://github.com/stoverc/Trigonometry/blob/main/img/VerCofHaf.pdf).
 * Future iterations may also include various definitions of so-called <i>parabolic trig functions</i>, as well as some other juicy trig-related tidbits that prove useful!
 
 <details>
