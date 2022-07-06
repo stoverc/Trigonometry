@@ -11,7 +11,7 @@
         This Paclet gathers a dozen little-used circular trig functions, their hyperbolic analogues, and the inverses of all of these, into a single, easy-to-use collection that works seamlessly with the 6,000+ Wolfram Language functions.
     </td>
     <td valign = "top">
-      <img src = "https://github.com/stoverc/Trigonometry/blob/main/img/Diagram1Trans.png" height="200%">
+      <img src = "https://github.com/stoverc/Trigonometry/blob/main/img/Diagram1Trans_Tall2.png" height="200%">
     </td>
   </tr>
  </table>
@@ -31,6 +31,7 @@
   <ol>
     <li>Completed a draft version of <code>Versine</code> documentation.</li>
     <li>Implemented rough versions of <code>Hyperbolic*</code> functions.</li>
+    <li>Later, tinkered with tall images for the README pic.</li>
   </ol>
   </details>
   <details>
