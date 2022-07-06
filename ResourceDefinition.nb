@@ -10287,7 +10287,7 @@ Cell["Additional information about limitations, issues, etc.", "Text",
 }, Open  ]]
 },
 WindowSize->{1010., Automatic},
-WindowMargins->{{154, Automatic}, {33, Automatic}},
+WindowMargins->{{Automatic, 181}, {Automatic, 0}},
 DockedCells->{
   Cell[
    BoxData[
@@ -10323,7 +10323,7 @@ DockedCells->{
                     DateString[
                     TimeZoneConvert[
                     DateObject[
-                    3.865822025912381`16.33981684533377*^9, TimeZone -> 0]], {
+                    3.866085454095244`16.33984643839513*^9, TimeZone -> 0]], {
                     "MonthName", " ", "DayShort", ", ", "Year", " ", 
                     "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
                     StandardForm], SingleEvaluation -> True, Evaluator -> 
@@ -10828,8 +10828,8 @@ CT3bPjrsHpO4GJ6jYNMEX6Ag6wsY8="}, "ClickToCopyTemplate"], "\"\"",
                     Not[
                     FreeQ[
                     DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
-                    "5fb45c86-7523-44af-83f3-a968b1cadc67"]]]]]], Appearance -> 
-                   None, BoxID -> "5fb45c86-7523-44af-83f3-a968b1cadc67", 
+                    "5a1799bc-6f99-4e70-b209-fc4a6baf5e16"]]]]]], Appearance -> 
+                   None, BoxID -> "5a1799bc-6f99-4e70-b209-fc4a6baf5e16", 
                    Evaluator -> Automatic, Method -> "Preemptive"], 
                   MouseAppearanceTag["LinkHand"]]}}, 
                GridBoxAlignment -> {
@@ -10859,7 +10859,7 @@ CT3bPjrsHpO4GJ6jYNMEX6Ag6wsY8="}, "ClickToCopyTemplate"], "\"\"",
                     DateString[
                     TimeZoneConvert[
                     DateObject[
-                    3.865822025912381`16.33981684533377*^9, TimeZone -> 0]], {
+                    3.866085454095244`16.33984643839513*^9, TimeZone -> 0]], {
                     "MonthName", " ", "DayShort", ", ", "Year", " ", 
                     "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
                     StandardForm], SingleEvaluation -> True, Evaluator -> 
@@ -11364,8 +11364,8 @@ CT3bPjrsHpO4GJ6jYNMEX6Ag6wsY8="}, "ClickToCopyTemplate"], "\"\"",
                     Not[
                     FreeQ[
                     DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
-                    "5fb45c86-7523-44af-83f3-a968b1cadc67"]]]]]], Appearance -> 
-                   None, BoxID -> "5fb45c86-7523-44af-83f3-a968b1cadc67", 
+                    "5a1799bc-6f99-4e70-b209-fc4a6baf5e16"]]]]]], Appearance -> 
+                   None, BoxID -> "5a1799bc-6f99-4e70-b209-fc4a6baf5e16", 
                    Evaluator -> Automatic, Method -> "Preemptive"], 
                   MouseAppearanceTag["LinkHand"]]}}, 
                GridBoxAlignment -> {
@@ -11402,8 +11402,8 @@ C5639xuxwQZQ/x80XtTHaYm/n1+2fi5Rj0g8L0BnOJeg3QNTetEYa7bPMAPk42kcQ=="},
                     TagBox[
                     
                     RowBox[{
-                    "\"https://www.wolframclou\"", "\[Ellipsis]", 
-                    "\"ealCStover/Trigonometry\""}], Short[#, 0.75]& ], 
+                    "\"https://www.wolframcloud.\"", "\[Ellipsis]", 
+                    "\"heRealCStover/Trigonometry\""}], Short[#, 0.75]& ], 
                     "https://www.wolframcloud.com/obj/cstover/\
 DeployedResources/Paclet/TheRealCStover/Trigonometry"}, "HyperlinkURL"]}, {
                     "\"\[FilledVerySmallSquare]\"", "\"Resource object:\"", 
@@ -11860,7 +11860,7 @@ CT3bPjrsHpO4GJ6jYNMEX6Ag6wsY8="}, "ClickToCopyTemplate"]}},
              DateString[
               TimeZoneConvert[
                DateObject[
-               3.865822025912381`16.33981684533377*^9, TimeZone -> 0]], {
+               3.866085454095244`16.33984643839513*^9, TimeZone -> 0]], {
               "MonthName", " ", "DayShort", ", ", "Year", " ", "Hour12Short", 
                ":", "Minute", " ", "AMPMLowerCase"}], SingleEvaluation -> 
              True, Evaluator -> "System"], FontSlant -> Italic, FontColor -> 
@@ -12352,8 +12352,8 @@ CT3bPjrsHpO4GJ6jYNMEX6Ag6wsY8="}, "ClickToCopyTemplate"]], "",
                   Not[
                    FreeQ[
                    DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
-                    "5fb45c86-7523-44af-83f3-a968b1cadc67"]]]]]], Appearance -> 
-             None, BoxID -> "5fb45c86-7523-44af-83f3-a968b1cadc67"], 
+                    "5a1799bc-6f99-4e70-b209-fc4a6baf5e16"]]]]]], Appearance -> 
+             None, BoxID -> "5a1799bc-6f99-4e70-b209-fc4a6baf5e16"], 
             "LinkHand"]}}, 
          ItemSize -> {{Automatic, Automatic, Automatic, Fit, 8, Automatic}, 
            Automatic}, 
@@ -12382,8 +12382,8 @@ C5639xuxwQZQ/x80XtTHaYm/n1+2fi5Rj0g8L0BnOJeg3QNTetEYa7bPMAPk42kcQ=="},
                  TagBox[
                   
                   RowBox[{
-                   "\"https://www.wolframclou\"", "\[Ellipsis]", 
-                    "\"ealCStover/Trigonometry\""}], Short[#, 0.75]& ]], 
+                   "\"https://www.wolframcloud.\"", "\[Ellipsis]", 
+                    "\"heRealCStover/Trigonometry\""}], Short[#, 0.75]& ]], 
                 "https://www.wolframcloud.com/obj/cstover/DeployedResources/\
 Paclet/TheRealCStover/Trigonometry"]}, {
               "\[FilledVerySmallSquare]", "Resource object:", 
@@ -12860,36 +12860,45 @@ Fu6DuJJG2H9mK2QZ3X1Y8rjKVdsLU11Qbnfn/Mae/TiO1RZHs2bny+6Vwq5Sfi8TnHKi+1+K4NOh"]\
   "UpdatedTimestamp" -> 3.865820761561068`16.339816703293895*^9, 
   "TemplateVersion" -> "1.5.62", "StatusMessage" -> "", "AutoUpdate" -> True, 
   "PacletBuildData" -> {"FileHashes" -> ByteArray[CompressedData["
-1:eJwBkARv+yFib1JiAQAAAIMEAAA4Qzp4nHPU1g3WcclPLs1NzStJLMnMz9N3
+1:eJwBtARL+yFib1JiAQAAAKcEAAA4Qzp4nHPU1Q3WcclPLs1NzStJLMnMz9N3
 zUvPySzO0HcvzUxJLdYPKcpMz8/Lz00tKarUy0tyZNINZgvOLy1KTvX5ac2Y
 WPT/vwdQJCSxKD21xOeIWGx4rH5XqW6wEnZDPfNSUiv04w30ktOKkYwqZvHL
-z0tFmPMjJjQ4f8oVR91gNXzmFKemg6SK4w3xmJU8I/zRtGO37Yg1yxiPWSEV
-vOa9OaHGusEaxJill56ah8e0zriHZ6tnP1XUDTbFblpQalpqUWpecmpAYjow
-KoIrc5Pyc4r1nTPyi1LQ4qLMOTX9+B7LRITppgJvRF6K7jPSDbYlzfT8jMSy
-1KLk/OLMvFQ0W3z/v3Q492p9DMIWwRXv/oqLlNrqBluTYwsWO1b1MEpeS1tS
-hrBjZq1hk/vHecqk24HLH/Y5222YPqkmI+wQPeI4we3Haj/dYEvS7cBiww0x
-LcXSwnciCBuY2qtmn7nR564bbEWSDa4VQC+kJifmlaBZ8f39pG07HGTiEFYc
-jNzT8YSzPV832IJEK7Ba0PRP9orHGW89hAVS9qdC6lin5JKapjwSk3HGRfvv
-aV9LkjS5ELbs3bl3Sr9Stiyp8Q21BYsd0XOP/d+0754Ewo63vj7vRL+aSJFu
-By5/hO7a7WIT8zESYccS4xDJrxunuegG25Bkh2ceyBep2LK5SE3xZ46rdUjZ
-vGbLgwv6z+qEdYNdyLIET25/tCv3bFunFlJO5NNt2LzcQwHoRycKLMNiVWL0
-R1Uj+4p4hFXhYnv3cjflspBtFS5fWR212ya4u8wKKe+XmvnfFd2XphvsQLZV
-WCyapLLh0/SnH70QFlXVftDwWhrFrhvsSI5FOEuCg0u+3FeRO1GLsOnzx5rT
-H6cl2usG25NnE1Z7jCVYXR94myNVYWqCC8vP2q6zIjP14SsXQo/5qyjvCZJC
-WBZYUp32aNoLSzKTBO7iQUL+xFPlMEGk8NtwZWdl06x1EmRbhctXXg9umK5/
-stgbYVXY+5jqu6YmrmSmvjAcFvU8YbVp0TSsRFjUzl0SvNX7to1usB2ZFmGx
-Zs2rU4f+tZmpIqxZ5rm988LyIiNSa1JcHnkca7DDaw1XNMKGMxP9ckv2RQHV
-mJNqAxbzd8672/BozRdNhPlbFKVSk3/cA7ZrtbCbH5yaWJScAWnrmUJas6l4
-2nlb7a98Uij8oUiKefhaxyoCE/P8rjdo6QZrEmlecSYe47SVeH9UHSgp0g3W
-Jca4tMzUnJRivfIcPEaer3YKWHrUEJjUTIgxMhNE+6aWJKYkliTiN/mXd4uw
-4SlTPt1gPWJMhrfqjfCYeWJS/xzZRZVaRJpZXpRZkqqXk5+cjcfMzFB/pYhH
-ocB8ro7DzILUnBwiu0OXHLdN3GzvlKUbrE3QMKL6RN4WFrfXn5ZmJslAfB2j
-1HfPni/40+2COw1hGkh070jMO7UoLzUHtSuKkkp8TFbev+Z2KUwRoR0hwhuQ
-mJyTWuKZl5aPpitfKmJZ9epv/AhdCBFBiC7fxLzMtNTiEvyp0qgzNvPA1yJG
-AKVVuCYvSFCu
+z0tFmCN9ev0+C7sVLrrBavjMKU5NB0kVxxviMSvCwVpnktjPSGLNMsZj1p1J
+zAvTnveo6AZrEGOWXnpqHh7TBH0fNC6peG6pG2yK3bSg1LTUotS85NSAxHRg
+VARX5ibl5xTrO2fkF6WgxUWZc2r68T2WiQjTTQXeiLwU3WekG2xLmun5GYll
+qUXJ+cWZealotvj+f+lw7tX6GCQ/rHj3V1yk1FY32JocW7DYsaqHUfJa2pIy
+hB0zaw2b3D/OUybdDlz+sM/ZbsP0STUZYYfoEccJbj9W++kGW5JuBxYbbohp
+KZYWvhNB2MDUXjX7zI0+d91gK5JscK0AeiE1OTGvBM2K7+8nbdvhIBOHsOJg
+5J6OJ5zt+brBFiRagdWCpn+yVzzOeOshLJCyPxVSxzoll9Q05ZGYjDMu2n9P
++1qSpMmFsGXvzr1T+pWyZUmNb6gtWOyInnvs/6Z99yQQdrz19Xkn+tVEinQ7
+cPkjdNduF5uYj5EIO5YYh0h+3TgNWIrZkGSHZx7IF6nYsrlITfFnjqt1SNm8
+ZsuDC/rP6oR1g13IsgRPbn+0K/dsW6cWUk7k023YvNxDAehHJwosw2JVYvRH
+VSP7iniEVeFie/dyN+WykG0VLl9ZHbXbJri7zAop75ea+d8V3ZemG+xAtlVY
+LJqksuHT9KcfvRAWVdV+0PBaGsWuG+xIjkU4S4KDS77cV5E7UYuw6fPHmtMf
+pyXa6wbbk2cTVnuMJVhdH3ibI1VhaoILy8/arrMiM/XhKxdCj/mrKO8JkkJY
+FlhSnfZo2gtLMpME7uJBQv7EU+UwQaTw23BlZ2XTrHUSZFuFy1deD26Yrn+y
+2BthVdj7mOq7piauZKa+MBwW9TxhtWnRNKxEWNTOXRK81fu2jW6wHZkWYbFm
+zatTh/61makirFnmub3zwvIiI1JrUlweeRxrsMNrDVc0woYzE/1yS/ZFAdWY
+k2oDFvNlxVpS/TNuhyDMf72DcbLBMRZt3WAt7OYHpyYWJWdA2nqmkNZsKp52
+XmSXu7ZT678MUszD1zqO28NyJMfRDRjCmkSaV5yJx7jk+i/FddtygUlSlxjj
+0jJTc1KK9cpz8Bj55OO74wdWywJbDibEGJkJon1TSxJTEksS8Zv8S7/oi0rv
+CkfdYD1iTIa36o3wmHlZYM98BYNncUSaWV6UWZKql5OfnI3HzMxQf6WIR6HA
+QFXHYWZBak4Okd0hlXnxli+NP3ASZZgRAcO4i6YZrHgoHaAbrE3QMKI6WEGn
+QvhMys6Jk2Qgvl6WftzalKZ1gbUkGWiOx0Cd2T/MHPI0S3CncEwDCfTdPl66
+c1W14RaDbrCYd2pRXmoOakcZJQ37PO6bVln1zF4MoR0hwhuQmJyTWuKZl5aP
+pitfKmJZ9epv/AhdCBFBiC7fxLzMtNTiEvx55ummbwoWs7OCAQ1c7OONJlst
+
       "]], "LastBuiltArchive" -> 
     "/Users/stover/Desktop/Other/WolframFiles/Paclets/Trigonometry/build/\
-TheRealCStover__Trigonometry-1.0.0.paclet"}},
+TheRealCStover__Trigonometry-1.0.0.paclet"}, 
+  "Openers" -> {
+   "NotesSection" -> Closed, "PrimaryExamplesSection" -> Open, 
+    "ExampleSection" -> {
+     "0" -> Closed, "1" -> Closed, "3" -> Closed, "4" -> Closed, "5" -> 
+      Closed, "6" -> Closed, "7" -> Closed}, 
+    "ExampleSubsection" -> {
+     "0" -> Closed, "1" -> Closed, "2" -> Closed, "3" -> Closed, "4" -> 
+      Closed, "5" -> Closed, "6" -> Closed, "7" -> Closed}}},
 CreateCellID->True,
 DynamicEvaluationTimeout->60,
 FrontEndVersion->"13.1 for Mac OS X x86 (64-bit) (June 16, 2022)",
@@ -13923,6 +13932,7 @@ AsyncronousResourceInformationUpdates = False,
                 Quiet[
                  
                  Block[{$ContextPath = RSNB`$cp$, 
+                   
                    ResourceSystemClient`$\
 AsyncronousResourceInformationUpdates = False, 
                    DefinitionNotebookClient`$ButtonCodeID = None}, 
@@ -14860,6 +14870,7 @@ p2HmwdTp4FCHTvOhqYfZrw2lhdDk0fno6tHcD1PPwOSAnY+uns8BAE8cGz4=
 Hw4apk4Uap8aDr4QDhqqDu4uVRx8URw0TJ001D5lHHwJHDRUHYMclFbCwZfG
 QUPVNSjgp+HmIWgAG/wcEg==
                     "]], 
+                    
                     FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2,
                      0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
                     0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1,
@@ -15543,7 +15554,6 @@ DcvuuIyle//vxt/PCE6d
           FaceForm[
            RGBColor[0.9451, 0.76471, 0.]]], 
          StyleBox[{
-           
            FilledCurveBox[{{{0, 2, 0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3,
               3}, {1, 3, 3}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {0, 
              1, 0}, {1, 3, 3}, {1, 3, 3}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {

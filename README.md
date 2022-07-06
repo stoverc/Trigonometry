@@ -8,7 +8,7 @@
       <br><br>
       We all know about <code>sin</code>, <code>cos</code>, and <code>tan</code>. Some of us may even know about <code>sec</code>, <code>arcsin</code>, <code>cosh</code>, and <code>arctanh</code>. A considerably smaller but still not-nonexistent group may know of <code>Haversine</code> and <code>InverseHaversin</code>. But...have you ever heard of <code>Covercosine</code>, <code>Excosecant</code>, and <code>Chord</code>?! Well if not, then this paclet is for you!
       <br><br>
-        This Paclet gathers nearly a dozen little-used circular trig functions, their hyperbolic analogues, and the inverses of all of these, into a single, easy-to-use collection that works seamlessly with the 6,000+ Wolfram Language functions.
+        This Paclet gathers a dozen little-used circular trig functions, their hyperbolic analogues, and the inverses of all of these, into a single, easy-to-use collection that works seamlessly with the 6,000+ Wolfram Language functions.
     </td>
     <td valign = "top">
       <img src = "https://github.com/stoverc/Trigonometry/blob/main/img/Diagram1Trans.png?raw=true" height="300%">
@@ -20,11 +20,19 @@
  
 ## TODO
 * Fill in the (many!) doc pages for the ciruclar functions and their inverses.
-* Implement hyperbolic fucntions and their inverses.
+* Implement inverse hyperbolic functions, and check the hyperbolic functions for accuracy.
+* Consider best implementation of <code>VerCofHaf</code> as shown in image.
 * Future iterations may also include various definitions of so-called <i>parabolic trig functions</i>, as well as some other juicy trig-related tidbits that prove useful!
 
 <details>
 <summary><h2>Changelog</h2></summary>
+  <details>
+  <summary><h3>6 Jul 2022</h3></summary>
+  <ol>
+    <li>Completed a draft version of <code>Versine</code> documentation.</li>
+    <li>Implemented rough versions of <code>Hyperbolic*</code> functions.</li>
+  </ol>
+  </details>
   <details>
   <summary><h3>3 Jul 2022</h3></summary>
   <ol>
