@@ -27,6 +27,12 @@
 <details>
 <summary><h2>Changelog</h2></summary>
   <details>
+  <summary><h3>11 Jul 2022</h3></summary>
+  <ol>
+    <li>Completed a draft version of <code>Vercosine</code> documentation.</li>
+  </ol>
+  </details>
+  <details>
   <summary><h3>6 Jul 2022</h3></summary>
   <ol>
     <li>Completed a draft version of <code>Versine</code> documentation.</li>

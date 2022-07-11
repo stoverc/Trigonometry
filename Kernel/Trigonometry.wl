@@ -19,7 +19,7 @@ BeginPackage["TheRealCStover`Trigonometry`"];
 	HyperbolicVercosine;
 	HyperbolicCoversine;
 	HyperbolicCovercosine; 
-	HyperbolicHaversine
+	HyperbolicHaversine;
 	HyperbolicHavercosine;
 	HyperbolicHacoversine; HyperbolicCohaversine;
 	HyperbolicHacovercosine; HyperbolicCohavercosine;
