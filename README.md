@@ -32,6 +32,7 @@
     <li>First drafts of documentation for several (circular) functions.</li>
     <li>Small changes to existing documentation.</li>
     <li>Got rid of the giant compressed image stored in the <code>Trigonometry.wl</code> file.</li>
+    <li>Later, added <i>chord</i> to the diagram(s).</li>
   </ol>
   </details>
   <details>
