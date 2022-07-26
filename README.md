@@ -11,7 +11,7 @@
         This Paclet gathers a dozen little-used circular trig functions, their hyperbolic analogues, and the inverses of all of these, into a single, easy-to-use collection that works seamlessly with the 6,000+ Wolfram Language functions.
     </td>
     <td valign = "top">
-      <img src = "https://github.com/stoverc/Trigonometry/blob/main/img/Diagram1Trans_Tall.png" height="200%">
+      <img src = "https://github.com/stoverc/Trigonometry/blob/main/img/Diagram1Trans.png?raw=true" height="300%">
     </td>
   </tr>
  </table>
@@ -21,11 +21,19 @@
 ## TODO
 * Fill in the (many!) doc pages for the ciruclar functions and their inverses.
 * Implement inverse hyperbolic functions, and check the hyperbolic functions for accuracy.
-* Consider best implementation of <code>VerCofHaf</code> as shown in image ([link](https://github.com/stoverc/Trigonometry/blob/main/img/VerCofHaf.pdf)).
+* Consider best implementation of <code>VerCofHaf</code> as shown in image.
 * Future iterations may also include various definitions of so-called <i>parabolic trig functions</i>, as well as some other juicy trig-related tidbits that prove useful!
 
 <details>
 <summary><h2>Changelog</h2></summary>
+  <details>
+  <summary><h3>25 Jul 2022</h3></summary>
+  <ol>
+    <li>First drafts of documentation for several (circular) functions.</li>
+    <li>Small changes to existing documentation.</li>
+    <li>Got rid of the giant compressed image stored in the <code>Trigonometry.wl</code> file.</li>
+  </ol>
+  </details>
   <details>
   <summary><h3>11 Jul 2022</h3></summary>
   <ol>
@@ -37,7 +45,6 @@
   <ol>
     <li>Completed a draft version of <code>Versine</code> documentation.</li>
     <li>Implemented rough versions of <code>Hyperbolic*</code> functions.</li>
-    <li>Later, tinkered with tall images for the README pic.</li>
   </ol>
   </details>
   <details>
