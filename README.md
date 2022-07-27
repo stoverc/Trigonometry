@@ -27,6 +27,13 @@
 <details>
 <summary><h2>Changelog</h2></summary>
   <details>
+  <summary><h3>26 Jul 2022</h3></summary>
+  <ol>
+    <li>First drafts of documentation for several (circular) functions.</li>
+    <li>Small changes to existing documentation.</li>
+  </ol>
+  </details>
+  <details>
   <summary><h3>25 Jul 2022</h3></summary>
   <ol>
     <li>First drafts of documentation for several (circular) functions.</li>

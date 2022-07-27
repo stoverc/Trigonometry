@@ -40758,7 +40758,7 @@ PX/3/z//Js+j//B/ABBk1x4=\
 144.],ExpressionUUID->"012b3b9f-99ea-4cd6-b7fe-0d7929fc3d48"]
 }, Open  ]]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -41809,9 +41809,9 @@ Cell[2065981, 35247, 334606, 5510, 183, 213332, 3520, "CachedBoxData", "BoxData"
  CellID->964866709]
 }, Open  ]]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[2400648, 40764, 258, 5, 23, "ExampleSection",ExpressionUUID->"89504fe9-fa7c-4134-b10e-ba8326d4d2ed",
+Cell[2400648, 40764, 258, 5, 35, "ExampleSection",ExpressionUUID->"89504fe9-fa7c-4134-b10e-ba8326d4d2ed",
  CellID->955760320],
 Cell[2400909, 40771, 913, 24, 45, "ExampleText",ExpressionUUID->"5b05a1d4-8aaa-4a70-a7aa-5a29521799bb",
  CellID->1582116605],
