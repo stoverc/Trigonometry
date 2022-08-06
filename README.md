@@ -1,5 +1,5 @@
 # Trigonometry
-[My](https://resources.wolframcloud.com/publishers/resources?PublisherID=TheRealCStover) `Trigonometry` paclet for [The Wolfram Paclet Repository](https://resources.wolframcloud.com/PacletRepository). <sup>([documentation](https://www.wolframcloud.com/obj/cstover/DeployedResources/Paclet/TheRealCStover/Trigonometry/))</sup>
+[My](https://resources.wolframcloud.com/publishers/resources?PublisherID=TheRealCStover) `Trigonometry` paclet for [The Wolfram Paclet Repository](https://resources.wolframcloud.com/PacletRepository). <sup>([documentation](https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/))</sup>
 
 <table>
   <tr>
@@ -19,13 +19,25 @@
  [![View notebooks](https://wolfr.am/HAAhzkRq)](https://wolfr.am/15vauXgrU)
  
 ## TODO
-* Fill in the (many!) doc pages for the ciruclar functions and their inverses.
+* Fill in the doc pages for the inverse ciruclar functions.
+* Create and fill in the doc pages for the hyperbolic functions.
 * Implement inverse hyperbolic functions, and check the hyperbolic functions for accuracy.
-* Consider best implementation of <code>VerCofHaf</code> as shown in image.
+* Figure out main page shingle info + better examples.
+* Consider best implementation of <code>VerCofHaf</code> as shown in image. Also, <code>Ex</code>?
 * Future iterations may also include various definitions of so-called <i>parabolic trig functions</i>, as well as some other juicy trig-related tidbits that prove useful!
 
 <details>
 <summary><h2>Changelog</h2></summary>
+  <details>
+  <summary><h3>5-6 Aug 2022</h3></summary>
+  <ol>
+    <li>Finished first-drafts of circular function docs.</li>
+    <li>Several bugfixes / changes to existing (circular function) documentation.</li>
+    <li>Put blank inverse circular function documentation into <code>/misc/In Progress</code> to get a first draft published to the Paclet Repo a bit faster.</li>
+    <li>Later, put the full-fledged version of the Guide page in <code>/misc/In Progress</code> and replaced the working version with a version with fewer links.</li>
+    <li>Published v1.0.0 in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
+  </ol>
+  </details>
   <details>
   <summary><h3>26 Jul 2022</h3></summary>
   <ol>

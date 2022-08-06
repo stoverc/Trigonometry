@@ -30,18 +30,6 @@ PacletObject[
           "TheRealCStover`Trigonometry`Hacovercosine",
           "TheRealCStover`Trigonometry`Hacoversine",
           "TheRealCStover`Trigonometry`Havercosine",
-          "TheRealCStover`Trigonometry`InverseChord",
-          "TheRealCStover`Trigonometry`InverseCohavercosine",
-          "TheRealCStover`Trigonometry`InverseCohaversine",
-          "TheRealCStover`Trigonometry`InverseCovercosine",
-          "TheRealCStover`Trigonometry`InverseCoversine",
-          "TheRealCStover`Trigonometry`InverseExcosecant",
-          "TheRealCStover`Trigonometry`InverseExsecant",
-          "TheRealCStover`Trigonometry`InverseHacovercosine",
-          "TheRealCStover`Trigonometry`InverseHacoversine",
-          "TheRealCStover`Trigonometry`InverseHavercosine",
-          "TheRealCStover`Trigonometry`InverseVercosine",
-          "TheRealCStover`Trigonometry`InverseVersine",
           "TheRealCStover`Trigonometry`Vercosine",
           "TheRealCStover`Trigonometry`Versine"
         }
