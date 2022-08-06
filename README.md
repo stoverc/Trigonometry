@@ -29,6 +29,13 @@
 <details>
 <summary><h2>Changelog</h2></summary>
   <details>
+  <summary><h3>6 Aug 2022</h3></summary>
+  <ol>
+    <li>Made small metadata tweaks of main shingle page.</li>
+    <li>Published v1.0.1 in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
+  </ol>
+  </details>
+  <details>
   <summary><h3>5-6 Aug 2022</h3></summary>
   <ol>
     <li>Finished first-drafts of circular function docs.</li>
