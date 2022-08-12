@@ -19,15 +19,24 @@
  [![View notebooks](https://wolfr.am/HAAhzkRq)](https://wolfr.am/15vauXgrU)
  
 ## TODO
-* Fill in the doc pages for the inverse ciruclar functions.
+* Finish filling in the doc pages for the inverse ciruclar functions.
 * Create and fill in the doc pages for the hyperbolic functions.
 * Implement inverse hyperbolic functions, and check the hyperbolic functions for accuracy.
 * Figure out main page shingle info + better examples.
 * Consider best implementation of <code>VerCofHaf</code> as shown in image. Also, <code>Ex</code>?
-* Future iterations may also include various definitions of so-called <i>parabolic trig functions</i>, as well as some other juicy trig-related tidbits that prove useful!
+* Check the <code>Future</code>'d documentation blocks and try to do the math to figure out more complex relationships between functions.
+* Include various definitions of so-called <i>parabolic trig functions</i>.
+* Also include other juicy trig-related tidbits that prove useful!
 
 <details>
 <summary><h2>Changelog</h2></summary>
+  <details> 
+  <summary><h3>12 Aug 2022</h3></summary>
+  <ol>
+    <li>Implemented beta version of InverseVersine documentation.</li>
+    <li>Published v1.0.3 in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
+  </ol>
+  </details>
   <details>
   <summary><h3>6 Aug 2022</h3></summary>
   <ol>
