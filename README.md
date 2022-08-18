@@ -33,15 +33,15 @@
   <details> 
   <summary><h3>18 Aug 2022</h3></summary>
   <ol>
-    <li>Implemented beta version of InverseCoversine and InverseVercosine documentation.</li>
-    <li>Made edits to InverseVersine + percolated them through the above.</li>
+    <li>Implemented beta version of <code>InverseCoversine</code> and <code>InverseVercosine</code> documentation.</li>
+    <li>Made edits to <code>InverseVersine</code> + percolated them through the above.</li>
     <li>Published v1.0.5 <sup>(v1.0.4 didn't actually publish)</sup> in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
   </ol>
   </details>
   <details> 
   <summary><h3>12 Aug 2022</h3></summary>
   <ol>
-    <li>Implemented beta version of InverseVersine documentation.</li>
+    <li>Implemented beta version of <code>InverseVersine</code> documentation.</li>
     <li>Published v1.0.3 in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
   </ol>
   </details>
@@ -75,7 +75,7 @@
     <li>First drafts of documentation for several (circular) functions.</li>
     <li>Small changes to existing documentation.</li>
     <li>Got rid of the giant compressed image stored in the <code>Trigonometry.wl</code> file.</li>
-    <li>Later, added <i>chord</i> to the diagram(s).</li>
+    <li>Later, added <code>chord</code> to the diagram(s).</li>
   </ol>
   </details>
   <details>
@@ -95,16 +95,16 @@
   <summary><h3>3 Jul 2022</h3></summary>
   <ol>
     <li>Added blank documentation pages for the circular trig functions and their inverses.</li>
-    <li>Also, updated the `PacletInfo` file and the README as appropriate.</li>
-    <li>Later, made considerable changes to the README file.
+    <li>Also, updated the <code>PacletInfo</code> file and the <code>README</code> as appropriate.</li>
+    <li>Later, made considerable changes to the <code>README</code> file.
   </ol>
   </details>
   <details>
   <summary><h3>26 Jun 2022</h3></summary>
   <ol>
-    <li>Made initial version of README.md. No idea why I didn't do this yesterday?</li>
-    <li>Later, added a .png version of the graphic to the `img` directory.</li>
-    <li>Later still, added a transparent version of the above-mentioned .png, and used it to update the README.md file to its current state.</li>
+    <li>Made initial version of <code>README.md</code>. No idea why I didn't do this yesterday?</li>
+    <li>Later, added a <code>.png</code> version of the graphic to the <code>img</code> directory.</li>
+    <li>Later still, added a transparent version of the above-mentioned <code>.png</code>, and used it to update the <code>README.md</code> file to its current state.</li>
   </ol>
   </details>
   <details>
