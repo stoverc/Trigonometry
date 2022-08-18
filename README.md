@@ -31,6 +31,14 @@
 <details>
 <summary><h2>Changelog</h2></summary>
   <details> 
+  <summary><h3>18 Aug 2022</h3></summary>
+  <ol>
+    <li>Implemented beta version of InverseCoversine and InverseVercosine documentation.</li>
+    <li>Made edits to InverseVersine + percolated them through the above.</li>
+    <li>Published v1.0.5 <sup>(v1.0.4 didn't actually publish)</sup> in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
+  </ol>
+  </details>
+  <details> 
   <summary><h3>12 Aug 2022</h3></summary>
   <ol>
     <li>Implemented beta version of InverseVersine documentation.</li>
