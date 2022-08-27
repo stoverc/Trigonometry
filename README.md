@@ -20,8 +20,7 @@
  
 ## TODO
 * Finish filling in the doc pages for the inverse ciruclar functions.
-* Go through all in-text links for circular functions + inverses and make sure they link to the correct webpages (a.k.a. _fix busted copy/paste job_).
-* Fill in the bottom-of-the-page metadata for circular functions + inverses; this should be a do-once-and-copy/paste job, but given my track record lately, I'll probably mess it up.
+* Add in historical examples of why people ever studied these functions (i.e. Google <code>versine</code> and see mapping, etc., uses that can be copied over).
 * Create and fill in the doc pages for the hyperbolic functions.
 * Write a <code>tech note</code> (_I think?_) about the naming conventions for these various trig functions; maybe later, incorporate some of the below-mentioned _juicy trig-related tidbits_ when the time is right.
 * Implement inverse hyperbolic functions, and check the hyperbolic functions for accuracy.
@@ -34,11 +33,23 @@
 <details>
 <summary><h2>Changelog</h2></summary>
   <details> 
+  <summary><h3>26 Aug 2022</h3></summary>
+  <ol>
+    <li>Fixed hundreds of instances of bad links in the existing documentation.</li>
+    <li>Added second Details and Options bullets to the <code>Inverse*</code> function documentations.</li>
+    <li>Changed $\cdot^{-1}$ to $arc\cdot$ in all <code>Inverse*</code> function documentations.</li>
+    <li>Added first draft keywords to all documentation.</li>
+    <li>Removed un-kept-up-with Author Notes from main page def notebook.</li>
+    <li>Also fixed dozens of other miscellaneous documentation bugs.</li>
+    <li>Published v1.0.8 in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
+  </ol>
+  </details>
+  <details> 
   <summary><h3>20-21 Aug 2022</h3></summary>
   <ol>
     <li>Made edits to circular <code>Inverse*</code> function documentation to fix a bad copy/paste situation as well as some utilization oversight.</li>
     <li>Implemented beta versions of <code>InverseCovercosine</code>, <code>InverseHavercosine</code>, etc. documentation.</li>
-    <li>Later, made edits to above-implemented function documentation.
+    <li>Later, made edits to above-implemented function documentation.</li>
     <li>Published v1.0.7 <sup>(v1.0.6 didn't actually publish)</sup> in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
   </ol>
   </details>
