@@ -37,7 +37,7 @@
   <ol>
     <li>Fixed hundreds of instances of bad links in the existing documentation.</li>
     <li>Added second Details and Options bullets to the <code>Inverse*</code> function documentations.</li>
-    <li>Changed $\cdot^{-1}$ to $arc\cdot$ in all <code>Inverse*</code> function documentations.</li>
+    <li>Changed $\square^{-1}$ to $arc\square$ in all <code>Inverse*</code> function documentations.</li>
     <li>Added first draft keywords to all documentation.</li>
     <li>Removed un-kept-up-with Author Notes from main page def notebook.</li>
     <li>Also fixed dozens of other miscellaneous documentation bugs.</li>
