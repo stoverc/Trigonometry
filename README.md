@@ -33,7 +33,7 @@
 <details>
 <summary><h2>Changelog</h2></summary>
   <details> 
-  <summary><h3>4 Sep 2022</h3></summary>
+  <summary><h4>4 Sep 2022</h4></summary>
   <ol>
     <li>Added first-draft documentation of all remaining <code>Inverse*</code> functions.</li>
     <li>Fixed Details and Options typos in the <code>Inverse*</code> functions' documentation.</li>
