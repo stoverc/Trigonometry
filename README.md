@@ -46,7 +46,7 @@
   </ol>
   </details>
   <details> 
-  <summary><h3>26 Aug 2022</h3></summary>
+  <summary><h4>26 Aug 2022</h4></summary>
   <ol>
     <li>Fixed hundreds of instances of bad links in the existing documentation.</li>
     <li>Added second Details and Options bullets to the <code>Inverse*</code> function documentations.</li>
@@ -58,7 +58,7 @@
   </ol>
   </details>
   <details> 
-  <summary><h3>20-21 Aug 2022</h3></summary>
+  <summary><h4>20-21 Aug 2022</h4></summary>
   <ol>
     <li>Made edits to circular <code>Inverse*</code> function documentation to fix a bad copy/paste situation as well as some utilization oversight.</li>
     <li>Implemented beta versions of <code>InverseCovercosine</code>, <code>InverseHavercosine</code>, etc. documentation.</li>
@@ -67,7 +67,7 @@
   </ol>
   </details>
   <details> 
-  <summary><h3>18 Aug 2022</h3></summary>
+  <summary><h4>18 Aug 2022</h4></summary>
   <ol>
     <li>Implemented beta version of <code>InverseCoversine</code> and <code>InverseVercosine</code> documentation.</li>
     <li>Made edits to <code>InverseVersine</code> + percolated them through the above.</li>
@@ -75,21 +75,21 @@
   </ol>
   </details>
   <details> 
-  <summary><h3>12 Aug 2022</h3></summary>
+  <summary><h4>12 Aug 2022</h4></summary>
   <ol>
     <li>Implemented beta version of <code>InverseVersine</code> documentation.</li>
     <li>Published v1.0.3 in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
   </ol>
   </details>
   <details>
-  <summary><h3>6 Aug 2022</h3></summary>
+  <summary><h4>6 Aug 2022</h4></summary>
   <ol>
     <li>Made small metadata tweaks of main shingle page.</li>
     <li>Published v1.0.2 <sup>(v1.0.1 didn't actually publish)</sup> in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
   </ol>
   </details>
   <details>
-  <summary><h3>5-6 Aug 2022</h3></summary>
+  <summary><h4>5-6 Aug 2022</h4></summary>
   <ol>
     <li>Finished first-drafts of circular function docs.</li>
     <li>Several bugfixes / changes to existing (circular function) documentation.</li>
@@ -99,14 +99,14 @@
   </ol>
   </details>
   <details>
-  <summary><h3>26 Jul 2022</h3></summary>
+  <summary><h4>26 Jul 2022</h4></summary>
   <ol>
     <li>First drafts of documentation for several (circular) functions.</li>
     <li>Small changes to existing documentation.</li>
   </ol>
   </details>
   <details>
-  <summary><h3>25 Jul 2022</h3></summary>
+  <summary><h4>25 Jul 2022</h4></summary>
   <ol>
     <li>First drafts of documentation for several (circular) functions.</li>
     <li>Small changes to existing documentation.</li>
@@ -115,20 +115,20 @@
   </ol>
   </details>
   <details>
-  <summary><h3>11 Jul 2022</h3></summary>
+  <summary><h4>11 Jul 2022</h4></summary>
   <ol>
     <li>Completed a draft version of <code>Vercosine</code> documentation.</li>
   </ol>
   </details>
   <details>
-  <summary><h3>6 Jul 2022</h3></summary>
+  <summary><h4>6 Jul 2022</h4></summary>
   <ol>
     <li>Completed a draft version of <code>Versine</code> documentation.</li>
     <li>Implemented rough versions of <code>Hyperbolic*</code> functions.</li>
   </ol>
   </details>
   <details>
-  <summary><h3>3 Jul 2022</h3></summary>
+  <summary><h4>3 Jul 2022</h4></summary>
   <ol>
     <li>Added blank documentation pages for the circular trig functions and their inverses.</li>
     <li>Also, updated the <code>PacletInfo</code> file and the <code>README</code> as appropriate.</li>
@@ -136,7 +136,7 @@
   </ol>
   </details>
   <details>
-  <summary><h3>26 Jun 2022</h3></summary>
+  <summary><h4>26 Jun 2022</h4></summary>
   <ol>
     <li>Made initial version of <code>README.md</code>. No idea why I didn't do this yesterday?</li>
     <li>Later, added a <code>.png</code> version of the graphic to the <code>img</code> directory.</li>
@@ -144,7 +144,7 @@
   </ol>
   </details>
   <details>
-  <summary><h3>25 Jun 2022</h3></summary>
+  <summary><h4>25 Jun 2022</h4></summary>
   <ol>
     <li>Initial commit. This version contains definitions for the circular functions + their inverses, as well as a halfish-completed landing page, one guide page in progress, and nothing else. There is still much to be done here.</li>
   </ol>
