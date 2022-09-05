@@ -20,9 +20,9 @@
  
 ## TODO
 * Add in historical examples of why people ever studied these functions (i.e. Google <code>versine</code> and see mapping, etc., uses that can be copied over).
-* Create and fill in the doc pages for the hyperbolic functions.
 * Check the hyperbolic functions for accuracy.
 * Implement inverse hyperbolic functions
+* Create and fill in the doc pages for the hyperbolic functions and their inverses.
 * Continue honing main page shingle info, examples, etc.
 * Check the <code>Future</code>'d documentation blocks and try to do the math to figure out more complex relationships between functions.
 * Include various definitions of so-called <i>parabolic trig functions</i>.
