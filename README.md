@@ -19,19 +19,32 @@
  [![View notebooks](https://wolfr.am/HAAhzkRq)](https://wolfr.am/15vauXgrU)
  
 ## TODO
-* Finish filling in the doc pages for the inverse ciruclar functions.
 * Add in historical examples of why people ever studied these functions (i.e. Google <code>versine</code> and see mapping, etc., uses that can be copied over).
 * Create and fill in the doc pages for the hyperbolic functions.
-* Write a <code>tech note</code> (_I think?_) about the naming conventions for these various trig functions; maybe later, incorporate some of the below-mentioned _juicy trig-related tidbits_ when the time is right.
-* Implement inverse hyperbolic functions, and check the hyperbolic functions for accuracy.
-* Figure out main page shingle info + better examples.
-* Consider best implementation of <code>VerCofHaf</code> as shown in image. Also, <code>Ex</code>?
+* Check the hyperbolic functions for accuracy.
+* Implement inverse hyperbolic functions
+* Continue honing main page shingle info, examples, etc.
 * Check the <code>Future</code>'d documentation blocks and try to do the math to figure out more complex relationships between functions.
 * Include various definitions of so-called <i>parabolic trig functions</i>.
+* Write a <code>tech note</code> (_I think?_) about the naming conventions for these various trig functions; maybe later, incorporate some of the below-mentioned _juicy trig-related tidbits_ when the time is right.
+* Consider best implementation of <code>VerCofHaf</code> as shown in image. Also, <code>Ex</code>, etc.
 * Also include other juicy trig-related tidbits that prove useful!
 
 <details>
 <summary><h2>Changelog</h2></summary>
+  <details> 
+  <summary><h3>4 Sep 2022</h3></summary>
+  <ol>
+    <li>Added first-draft documentation of all remaining <code>Inverse*</code> functions.</li>
+    <li>Fixed Details and Options typos in the <code>Inverse*</code> functions' documentation.</li>
+    <li>Fixed a definition bug in <code>InverseExcosecant</code>.</li>
+    <li>Later, fixed math errors in Details and Options in various <code>Inverse*</code> functions' documentation.</li>
+    <li>Updated the main shingle page with some new examples and some resectioning.</li>
+    <li>Deleted various "saved for later" documentation notebooks as they were no longer required.</li>
+    <li>Made some edits to the Guide page as needed.</li>
+    <li>Published v1.1.0 in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
+  </ol>
+  </details>
   <details> 
   <summary><h3>26 Aug 2022</h3></summary>
   <ol>

@@ -7,7 +7,7 @@ PacletObject[
     "Creator" -> "Christopher Stover",
     "License" -> "MIT",
     "PublisherID" -> "TheRealCStover",
-    "Version" -> "1.0.8",
+    "Version" -> "1.1.0",
     "WolframVersion" -> "13+",
     "Extensions" -> {
       {
@@ -30,10 +30,13 @@ PacletObject[
           "TheRealCStover`Trigonometry`Hacovercosine",
           "TheRealCStover`Trigonometry`Hacoversine",
           "TheRealCStover`Trigonometry`Havercosine",
+          "TheRealCStover`Trigonometry`InverseChord",
           "TheRealCStover`Trigonometry`InverseCohavercosine",
           "TheRealCStover`Trigonometry`InverseCohaversine",
           "TheRealCStover`Trigonometry`InverseCovercosine",
           "TheRealCStover`Trigonometry`InverseCoversine",
+          "TheRealCStover`Trigonometry`InverseExcosecant",
+          "TheRealCStover`Trigonometry`InverseExsecant",
           "TheRealCStover`Trigonometry`InverseHacovercosine",
           "TheRealCStover`Trigonometry`InverseHacoversine",
           "TheRealCStover`Trigonometry`InverseHavercosine",
