@@ -19,19 +19,36 @@
  [![View notebooks](https://wolfr.am/HAAhzkRq)](https://wolfr.am/15vauXgrU)
  
 ## TODO
+* Consider changing earlier documentation (e.g. <code>Versine</code>) to say "...is defined in terms of..." instead of immediately going with "...can be represented in terms of..." to mimic the way that <code>Inverse*</code> documentation is phrased.
 * Add in historical examples of why people ever studied these functions (i.e. Google <code>versine</code> and see mapping, etc., uses that can be copied over).
 * Check the hyperbolic functions for accuracy.
 * Implement inverse hyperbolic functions
 * Create and fill in the doc pages for the hyperbolic functions and their inverses.
 * Continue honing main page shingle info, examples, etc.
 * Check the <code>Future</code>'d documentation blocks and try to do the math to figure out more complex relationships between functions.
+* Include <code>cis(z)</code>? [link](https://en.wikipedia.org/wiki/Cis_(mathematics))
 * Include various definitions of so-called <i>parabolic trig functions</i>.
-* Write a <code>tech note</code> (_I think?_) about the naming conventions for these various trig functions; maybe later, incorporate some of the below-mentioned _juicy trig-related tidbits_ when the time is right.
+* Maybe later in Tech Note, consider incorporating some of the below-mentioned _juicy trig-related tidbits_ when the time is right.
 * Consider best implementation of <code>VerCofHaf</code> as shown in image. Also, <code>Ex</code>, etc.
 * Also include other juicy trig-related tidbits that prove useful!
 
 <details>
 <summary><h2>Changelog</h2></summary>
+  <details>
+  <summary><h4>5-8 Sep 2022</h4></summary>
+  <ol>
+    <li>Wrote a first-draft copy of a Tech Note.</li>
+    <li>Tweaked + fixed math errors in Details and Options sections of various functions' documentation.</li>
+    <li>Added a small blurb about the math behind the <code>Chord</code> function.</li>
+    <li>Later, added some examples to the <code>Chord</code> function documentation.</li>
+    <li>Removed the "blah" sections from the Guide page and linked the Guide page to the Tech Note.</li>
+    <li>Linked Tech Note and Guide to all documentation pages.</li>
+    <li>Fixed a metadata link issue in one of the doc pages.</li>
+    <li>Added "See Also" to <code>Hacoversine</code> and <code>Hacovercosine</code>.
+    <li>Later, edited <code>README.md</code> to link to versioned shingles as available (versions before v1.0.7 are not available).
+    <li>Published v1.2.0 in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
+  </ol>
+  </details>
   <details> 
   <summary><h4>4 Sep 2022</h4></summary>
   <ol>
@@ -42,7 +59,7 @@
     <li>Updated the main shingle page with some new examples and some resectioning.</li>
     <li>Deleted various "saved for later" documentation notebooks as they were no longer required.</li>
     <li>Made some edits to the Guide page as needed.</li>
-    <li>Published v1.1.0 in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
+    <li>Published v1.1.0 in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/version/1.1.0/">link</a>)</li>
   </ol>
   </details>
   <details> 
@@ -54,7 +71,7 @@
     <li>Added first draft keywords to all documentation.</li>
     <li>Removed un-kept-up-with Author Notes from main page def notebook.</li>
     <li>Also fixed dozens of other miscellaneous documentation bugs.</li>
-    <li>Published v1.0.8 in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
+    <li>Published v1.0.8 in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/version/1.0.8/">link</a>)</li>
   </ol>
   </details>
   <details> 
@@ -63,7 +80,7 @@
     <li>Made edits to circular <code>Inverse*</code> function documentation to fix a bad copy/paste situation as well as some utilization oversight.</li>
     <li>Implemented beta versions of <code>InverseCovercosine</code>, <code>InverseHavercosine</code>, etc. documentation.</li>
     <li>Later, made edits to above-implemented function documentation.</li>
-    <li>Published v1.0.7 <sup>(v1.0.6 didn't actually publish)</sup> in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
+    <li>Published v1.0.7 <sup>(v1.0.6 didn't actually publish)</sup> in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/version/1.0.7/">link</a>)</li>
   </ol>
   </details>
   <details> 

@@ -1,0 +1,2765 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    124447,       2757]
+NotebookOptionsPosition[    114479,       2560]
+NotebookOutlinePosition[    115190,       2582]
+CellTagsIndexPosition[    115147,       2579]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Trig Functions and Naming Conventions", "Title",
+ CellChangeTimes->{
+  3.8713343837650557`*^9, {3.871337231966455*^9, 3.871337236213382*^9}},
+ CellID->894678052,ExpressionUUID->"3c546d06-8bd0-4aaa-a056-e685189a58a9"],
+
+Cell["\<\
+Trigonometric functions are functions that describe relationships between \
+quantities in conics such as circles and hyperbolas. \
+\>", "Text",
+ CellChangeTimes->{{3.8713344796612377`*^9, 3.8713345892308683`*^9}, 
+   3.8713382563608418`*^9, {3.87133844178577*^9, 3.871338442448544*^9}},
+ CellID->173523670,ExpressionUUID->"48bff96d-4dff-48ff-badb-f08bfbf1df30"],
+
+Cell[CellGroupData[{
+
+Cell["Trig Functions: Everything Starts with Sine", "Section",
+ CellChangeTimes->{{3.8713382623014097`*^9, 3.871338267132721*^9}, {
+  3.8713397670746117`*^9, 3.871339790433477*^9}, {3.87133982676786*^9, 
+  3.8713398343850327`*^9}},
+ CellID->1684678348,ExpressionUUID->"5592cf07-d3a7-44e0-bdb2-bf78d367c266"],
+
+Cell[TextData[{
+ "There are a large number of \"common\" circular trig functions, each of \
+which has a hyperbolic analogue. However, the vast majority of such functions \
+can be built from ",
+ StyleBox["only",
+  FontSlant->"Italic"],
+ " the sine function."
+}], "Text",
+ CellChangeTimes->{{3.8713344796612377`*^9, 3.8713345892308683`*^9}, {
+   3.871338447848872*^9, 3.8713384754893007`*^9}, {3.871338606853332*^9, 
+   3.871338636588498*^9}, 3.8713397549959593`*^9},
+ CellID->1795696577,ExpressionUUID->"cfe2fb80-6ac1-4ff8-aa6d-a16075e6c56a"],
+
+Cell[BoxData[GridBox[{
+   {
+    RowBox[{
+     ButtonBox["Sin",
+      BaseStyle->"Link"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[
+    "the sine function (with argument in radians)", "TableText",
+     ExpressionUUID->"cff2448b-42ab-4c8e-a98f-5c69eec26c8d"]},
+   {
+    RowBox[{
+     ButtonBox["ArcSin",
+      BaseStyle->"Link"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Sin",
+        BaseStyle->"Link"], "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "196a8ad4-4f8f-41a3-967b-05049e4b5086"]
+    }], "TableText",ExpressionUUID->"65846f45-504e-4e74-93f0-8fb7fb13b2df"]}
+  }]], "DefinitionBox",
+ CellChangeTimes->{{3.871334638795136*^9, 3.871334723522319*^9}, 
+   3.871334755673258*^9, {3.871334890647911*^9, 3.871334994711918*^9}, {
+   3.8713354734494867`*^9, 3.871335478920497*^9}, {3.871338649309875*^9, 
+   3.871338683718912*^9}},
+ CellID->129529064,ExpressionUUID->"fb70d878-4644-4d26-a4da-9dd3f7099be1"],
+
+Cell["\<\
+All commonly-encountered circular trig functions can be built from the sine \
+function.\
+\>", "Caption",
+ CellChangeTimes->{{3.8713347269177427`*^9, 3.871334751834983*^9}, {
+  3.8713386940103283`*^9, 3.871338707632259*^9}},
+ CellID->1594044237,ExpressionUUID->"dd8cdcb3-1580-4045-91b5-45f13e9b94ec"],
+
+Cell["\<\
+The remaining commonly-encountered trig functions as well as an enormous \
+collection of lesser-known ones can be built from sine by either applying \
+operator(s) to the function (see below), forming quotients therefrom, or \
+performing other miscellaneous operations thereto (also discussed below).\
+\>", "Text",
+ CellChangeTimes->{{3.8713344796612377`*^9, 3.8713345892308683`*^9}, {
+  3.871335005120902*^9, 3.8713350560700912`*^9}, {3.871337872170947*^9, 
+  3.871337894648635*^9}, {3.8713387445309057`*^9, 3.8713388164421988`*^9}, {
+  3.8713393636043653`*^9, 3.871339406304529*^9}, {3.871339439914366*^9, 
+  3.871339464200275*^9}, {3.871341270959772*^9, 3.871341276435601*^9}, {
+  3.8715868145287027`*^9, 3.871586925124317*^9}},
+ CellID->1190002665,ExpressionUUID->"550458f3-b6a2-4bcd-a340-e10ce01db559"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Applying Operators: Building New Functions", "Section",
+ CellChangeTimes->{{3.871335573369814*^9, 3.871335575225078*^9}, {
+  3.871339796514825*^9, 3.871339842592553*^9}, {3.871342642685561*^9, 
+  3.8713426437883387`*^9}, {3.871342851751396*^9, 3.8713428522859592`*^9}, {
+  3.871586951974415*^9, 3.871586954259241*^9}},
+ CellID->1986505663,ExpressionUUID->"d81c1e13-1497-49f4-8283-58b6b44665f9"],
+
+Cell["\<\
+To derive the remaining \"common\" circular trig functions as well as the \
+many lesser-known ones included in the Trigonometry paclet, there are several \
+operators that can be applied to a given function. These operators will be \
+clearly examined the sections that follow and should be understood in order \
+to better understand the functions and naming conventions utilized in this \
+paclet.\
+\>", "Text",
+ CellChangeTimes->{{3.8713344796612377`*^9, 3.8713345892308683`*^9}, {
+  3.871335005120902*^9, 3.8713350166396914`*^9}, {3.871335127372691*^9, 
+  3.871335214398191*^9}, {3.8713352654426937`*^9, 3.871335311365868*^9}, {
+  3.8713353472300653`*^9, 3.8713354007864437`*^9}, {3.8713354921497993`*^9, 
+  3.8713355493533916`*^9}, {3.871335587320991*^9, 3.871335605414222*^9}, {
+  3.871338835055688*^9, 3.871338848959383*^9}, {3.8713389107173367`*^9, 
+  3.871338936797636*^9}, {3.871586964114943*^9, 3.871587136835246*^9}},
+ CellID->830071450,ExpressionUUID->"afc205d2-e4f7-48b2-91d5-21e63862ae29"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{"co", " ", 
+   RowBox[{"f", "(", "x", ")"}]}], 
+  TraditionalForm]], \
+"InlineMath",ExpressionUUID->"b6edce51-2134-497c-8e8a-03e4af1869d8"]], \
+"Subsection",
+ CellChangeTimes->{{3.871335850618779*^9, 3.871335860463294*^9}, {
+  3.871338336645299*^9, 3.8713383371167316`*^9}},
+ CellID->1350321043,ExpressionUUID->"2b0f31c5-82e1-4bce-a28e-0d087ffa271a"],
+
+Cell[TextData[{
+ "For a given function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]], "InlineMath",
+  ExpressionUUID->"f2eaa9e1-1c1a-4b9c-83d5-6de83da8dc86"],
+ ", denote by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"co", " ", 
+    RowBox[{"f", "(", "x", ")"}]}], TraditionalForm]], "InlineMath",
+  ExpressionUUID->"0b1857ea-1422-4274-acd1-6d54ca49f786"],
+ " the co-",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]], "InlineMath",
+  ExpressionUUID->"73076eed-312b-4df3-b947-9ec212758faf"],
+ " function defined by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"co", " ", 
+     RowBox[{"f", "(", "x", ")"}]}], "=", 
+    RowBox[{"f", "(", 
+     RowBox[{
+      RowBox[{"\[Pi]", "/", "2"}], "-", "x"}], ")"}]}], TraditionalForm]], 
+  "InlineMath",ExpressionUUID->"679bfe48-fe55-4506-a19f-6746a35d238b"],
+ ". "
+}], "Text",
+ CellChangeTimes->{{3.871335747327982*^9, 3.871335836747034*^9}, {
+   3.8713358755558653`*^9, 3.871335964892218*^9}, {3.871336375997719*^9, 
+   3.871336395492298*^9}, {3.871338339820286*^9, 3.8713384016696987`*^9}, {
+   3.871338483808242*^9, 3.871338591695752*^9}, 3.87133896025119*^9, {
+   3.871343893942955*^9, 3.871343896206256*^9}, {3.871588627120245*^9, 
+   3.871588627734844*^9}},
+ CellID->238588205,ExpressionUUID->"38ed4d72-112e-458f-932d-3cf088da73e4"],
+
+Cell[TextData[{
+ "The most basic of these functions is the well-known cosine function, which \
+is defined to be the co- version of the aforementioned ",
+ Cell[BoxData[
+  ButtonBox["Sin",
+   BaseStyle->"Link"]], "InlineFormula",ExpressionUUID->
+  "dd4128f4-ef73-4d57-8278-36c301236e23"],
+ " function."
+}], "Text",
+ CellChangeTimes->{{3.871335747327982*^9, 3.871335836747034*^9}, {
+  3.8713358755558653`*^9, 3.871335964892218*^9}, {3.871336375997719*^9, 
+  3.871336395492298*^9}, {3.871338339820286*^9, 3.8713384016696987`*^9}, {
+  3.871338483808242*^9, 3.871338591695752*^9}, {3.871338969708983*^9, 
+  3.8713389941998243`*^9}, {3.8713413218736057`*^9, 3.871341323093172*^9}, {
+  3.8715886373896437`*^9, 3.871588684308494*^9}},
+ CellID->1247576760,ExpressionUUID->"4e0ddd88-ece0-49ca-ac37-964d92a1fcbb"],
+
+Cell[BoxData[GridBox[{
+   {
+    RowBox[{
+     ButtonBox["Cos",
+      BaseStyle->"Link"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the cosine function (with argument in radians), ",
+     Cell[BoxData[
+      FormBox[
+       RowBox[{
+        RowBox[{"cos", "(", "z", ")"}], "=", 
+        RowBox[{"sin", "(", 
+         RowBox[{
+          RowBox[{"\[Pi]", "/", "2"}], "-", "z"}], ")"}]}], TraditionalForm]],
+       "InlineMath",ExpressionUUID->"62b6ec1e-630e-4c57-a76a-3d8e63c7fdbd"]
+    }], "TableText",ExpressionUUID->"88f5689c-6760-4835-86f7-bf1d09c75cee"]},
+   {
+    RowBox[{
+     ButtonBox["ArcCos",
+      BaseStyle->"Link"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Cos",
+        BaseStyle->"Link"], "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "bd7ebe75-e99e-4b86-bcf1-d4a69ff6edad"]
+    }], "TableText",ExpressionUUID->"94c6d28b-4a5d-41ee-bce0-c0019f052f78"]}
+  }]], "DefinitionBox",
+ CellChangeTimes->{{3.871334638795136*^9, 3.871334723522319*^9}, 
+   3.871334755673258*^9, {3.871334890647911*^9, 3.871334994711918*^9}, {
+   3.8713354734494867`*^9, 3.871335478920497*^9}, {3.871338649309875*^9, 
+   3.871338683718912*^9}, {3.871339008036446*^9, 3.871339019581995*^9}, {
+   3.871587151982409*^9, 3.871587177731142*^9}},
+ CellID->1225900096,ExpressionUUID->"307b3bdf-6d19-4805-8f77-bb4de9a1ba8b"],
+
+Cell["Cosine is just the \"co\" operator applied to sine.", "Caption",
+ CellChangeTimes->{{3.8713347269177427`*^9, 3.871334751834983*^9}, {
+  3.8713386940103283`*^9, 3.871338707632259*^9}, {3.871339041450692*^9, 
+  3.871339057145339*^9}},
+ CellID->744804154,ExpressionUUID->"ff834e0d-ba90-448f-aad5-8ea2febb2879"],
+
+Cell["\<\
+With sine and cosine defined, two \"new\" functions can be defined by taking \
+quotients.\
+\>", "Text",
+ CellChangeTimes->{{3.871339068785678*^9, 3.871339130928734*^9}, {
+  3.8713413304376802`*^9, 3.871341347869453*^9}},
+ CellID->1880658193,ExpressionUUID->"299f1193-ce96-437d-b2ba-7a67fe464ae6"],
+
+Cell[BoxData[GridBox[{
+   {
+    RowBox[{
+     ButtonBox["Tan",
+      BaseStyle->"Link"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the tangent function, ",
+     Cell[BoxData[
+      FormBox[
+       RowBox[{
+        RowBox[{"sin", "(", "z", ")"}], "/", 
+        RowBox[{"cos", "(", "z", ")"}]}], TraditionalForm]], "InlineMath",
+      ExpressionUUID->"f6dfea8f-00a0-4258-949d-8bbcd93b398d"]
+    }], "TableText",ExpressionUUID->"a02ec8a7-24e2-4439-b668-644ddf8425b3"]},
+   {
+    RowBox[{
+     ButtonBox["Sec",
+      BaseStyle->"Link"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the secant function, ",
+     Cell[BoxData[
+      FormBox[
+       RowBox[{"1", "/", 
+        RowBox[{"cos", "(", "z", ")"}]}], TraditionalForm]], "InlineMath",
+      ExpressionUUID->"bdcbbdd6-01d7-45a8-9d04-5b8c1484c4bc"]
+    }], "TableText",ExpressionUUID->"ae634dc7-02c4-4468-9221-46b80846ff93"]},
+   {
+    RowBox[{
+     ButtonBox["ArcTan",
+      BaseStyle->"Link"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Tan",
+        BaseStyle->"Link"], "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "a34e4492-fc9a-4396-81fc-0264ee80e98a"]
+    }], "TableText",ExpressionUUID->"7d13678d-c480-45e7-8ed4-0798c7d9cd00"]},
+   {
+    RowBox[{
+     ButtonBox["ArcSec",
+      BaseStyle->"Link"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Sec",
+        BaseStyle->"Link"], "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "b8effbb2-cf0e-4edc-bb9c-d3c2d20a5df9"]
+    }], "TableText",ExpressionUUID->"0b91b073-33d6-4a6b-88fd-131863d9197a"]}
+  }]], "DefinitionBox",
+ CellChangeTimes->{{3.8713391376176243`*^9, 3.8713392663377447`*^9}, {
+  3.8713439032200813`*^9, 3.871343922793556*^9}},
+ CellID->2145807156,ExpressionUUID->"af0a06b3-a0c6-45c7-a8a1-65e2d67d38d2"],
+
+Cell["\<\
+\"New\" trig functions defined by taking quotients of sines and cosines.\
+\>", "Caption",
+ CellChangeTimes->{{3.871339271725627*^9, 3.871339303859065*^9}},
+ CellID->1887986821,ExpressionUUID->"a5b90f19-77f4-4811-aa99-ea6c9d9c8a65"],
+
+Cell["\<\
+From here, the co- operator can be applied to derive the commonly-used \
+cosecant and cotangent functions.\
+\>", "Text",
+ CellChangeTimes->{{3.871335747327982*^9, 3.871335836747034*^9}, {
+  3.8713358755558653`*^9, 3.871335964892218*^9}, {3.871336375997719*^9, 
+  3.871336395492298*^9}, {3.871338339820286*^9, 3.8713384016696987`*^9}, {
+  3.871338483808242*^9, 3.871338591695752*^9}, {3.871338969708983*^9, 
+  3.871338993235957*^9}, {3.871339311660202*^9, 3.871339336892406*^9}, {
+  3.8713395793428907`*^9, 3.871339582814691*^9}, {3.871341353250844*^9, 
+  3.871341377324601*^9}},
+ CellID->1581265903,ExpressionUUID->"bc98c8cc-5260-43b8-a07f-16883ac27e46"],
+
+Cell[BoxData[GridBox[{
+   {
+    RowBox[{
+     ButtonBox["Csc",
+      BaseStyle->"Link"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the cosecant function, ",
+     Cell[BoxData[
+      FormBox[
+       RowBox[{
+        RowBox[{"csc", "(", "x", ")"}], "=", 
+        RowBox[{"sec", "(", 
+         RowBox[{
+          RowBox[{"\[Pi]", "/", "2"}], "-", "x"}], ")"}]}], TraditionalForm]],
+       "InlineMath",ExpressionUUID->"7b1e9d6e-0ed0-4fbd-9784-81ff0c8f038d"]
+    }], "TableText",ExpressionUUID->"5e0b2f38-ac8a-42cb-ba91-5ed73dbd0103"]},
+   {
+    RowBox[{
+     ButtonBox["Cot",
+      BaseStyle->"Link"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the cotangent function, ",
+     Cell[BoxData[
+      FormBox[
+       RowBox[{
+        RowBox[{"cot", "(", "x", ")"}], "=", 
+        RowBox[{"tan", "(", 
+         RowBox[{
+          RowBox[{"\[Pi]", "/", "2"}], "-", "x"}], ")"}]}], TraditionalForm]],
+       "InlineMath",ExpressionUUID->"84aba994-0385-4e1d-bfa7-ce9a9e190dd9"]
+    }], "TableText",ExpressionUUID->"a8b31025-a925-43f1-a241-8ae3a30d391d"]},
+   {
+    RowBox[{"ArcCsc", "[", "z", "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Csc",
+        BaseStyle->"Link"], "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "fd1ceae5-53d7-4889-877f-f397b01a981e"]
+    }], "TableText",ExpressionUUID->"5dfbb7be-9df9-475a-8aa9-bc4ced45b33b"]},
+   {
+    RowBox[{
+     ButtonBox["ArcCot",
+      BaseStyle->"Link"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Cot",
+        BaseStyle->"Link"], "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "72bfe3e7-58b0-4386-a897-7a9e545f7c8a"]
+    }], "TableText",ExpressionUUID->"43936c09-9687-4914-be27-fa888a6dcc98"]}
+  }]], "DefinitionBox",
+ CellChangeTimes->{{3.8713394896258183`*^9, 3.8713395675649633`*^9}, {
+  3.871343931719371*^9, 3.87134393915543*^9}},
+ CellID->1750995856,ExpressionUUID->"14b96cd7-55b8-4c92-8625-12d86d036cbd"],
+
+Cell["\<\
+Applying the co- operator to get the rest of the commonly-used trigonometric \
+functions.\
+\>", "Caption",
+ CellChangeTimes->{{3.87133959226257*^9, 3.8713396225179853`*^9}, {
+  3.871341381027604*^9, 3.8713413987623568`*^9}},
+ CellID->2018936951,ExpressionUUID->"34f46641-fa33-42a5-81f0-1939340e2c8d"],
+
+Cell["\<\
+The real power of the co- operator becomes more evident below, where co- is \
+combined with other operators to produce an almost-limitless array of new \
+trig functions.\
+\>", "Text",
+ CellChangeTimes->{{3.871335747327982*^9, 3.871335836747034*^9}, {
+   3.8713358755558653`*^9, 3.871335964892218*^9}, {3.871336375997719*^9, 
+   3.871336395492298*^9}, {3.871338424029789*^9, 3.871338425072789*^9}, {
+   3.8713396534630833`*^9, 3.871339704092333*^9}, 3.8713398613557253`*^9, {
+   3.871343946758731*^9, 3.871343948676035*^9}, {3.871581536694231*^9, 
+   3.871581631412005*^9}},
+ CellID->1196771326,ExpressionUUID->"86f21118-6ba4-4129-93d0-babef7261ed4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{"ver", " ", 
+   RowBox[{"f", "(", "x", ")"}]}], 
+  TraditionalForm]], \
+"InlineMath",ExpressionUUID->"6d72c425-1b4c-4f6e-b433-def0dfa5d2fc"]], \
+"Subsection",
+ CellChangeTimes->{{3.871335850618779*^9, 3.871335860463294*^9}},
+ CellID->1415315046,ExpressionUUID->"8a604f1f-8e49-474f-8dd0-572e44dc5f2b"],
+
+Cell[TextData[{
+ "For a given function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]], "InlineMath",
+  ExpressionUUID->"e349dfaa-604c-40aa-a33a-17b56095ca3b"],
+ ", denote by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"ver", " ", 
+    RowBox[{"f", "(", "x", ")"}]}], TraditionalForm]], "InlineMath",
+  ExpressionUUID->"94e18d75-713f-40f7-985e-ef0551bf6bf9"],
+ " the versed ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]], "InlineMath",
+  ExpressionUUID->"f4edc9c5-42d4-4a9d-9921-0eb7643ffc07"],
+ ", defined by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"ver", " ", 
+     RowBox[{"f", "(", "x", ")"}]}], "=", 
+    SuperscriptBox[
+     RowBox[{"2", " ", "[", 
+      RowBox[{"f", "(", 
+       RowBox[{"x", "/", "2"}], ")"}], "]"}], "2"]}], TraditionalForm]], 
+  "InlineMath",ExpressionUUID->"3227a32a-551f-4b03-85c6-09be3a35880a"],
+ ". "
+}], "Text",
+ CellChangeTimes->{{3.871335747327982*^9, 3.871335836747034*^9}, {
+   3.8713358755558653`*^9, 3.871335964892218*^9}, {3.871336375997719*^9, 
+   3.871336395492298*^9}, {3.871338424029789*^9, 3.871338425072789*^9}, {
+   3.8713396534630833`*^9, 3.871339704092333*^9}, 3.8713398613557253`*^9, {
+   3.871343946758731*^9, 3.871343948676035*^9}, {3.87158609451348*^9, 
+   3.87158610900288*^9}},
+ CellID->123326853,ExpressionUUID->"b2882e9a-8a30-4779-b0be-6c8de8ba8410"],
+
+Cell["\<\
+The two most basic such functions are the versed sine and versed cosine, both \
+of which are defined in the Trigonometry paclet.\
+\>", "Text",
+ CellChangeTimes->{{3.871335747327982*^9, 3.871335836747034*^9}, {
+  3.8713358755558653`*^9, 3.871335964892218*^9}, {3.871336375997719*^9, 
+  3.871336395492298*^9}, {3.871338424029789*^9, 3.871338425072789*^9}, {
+  3.8713396534630833`*^9, 3.871339704092333*^9}},
+ CellID->342174885,ExpressionUUID->"0215999c-441f-4842-9a46-1a979c379a45"],
+
+Cell[BoxData[GridBox[{
+   {
+    RowBox[{
+     ButtonBox["Versine",
+      BaseStyle->"Link",
+      ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Versine"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the versed sine function, ",
+     Cell[BoxData[
+      FormBox[
+       RowBox[{
+        RowBox[{"versine", "(", "z", ")"}], "=", 
+        RowBox[{"2", " ", 
+         RowBox[{
+          SuperscriptBox["sin", "2"], "(", 
+          RowBox[{"z", "/", "2"}], ")"}]}]}], TraditionalForm]], "InlineMath",
+      ExpressionUUID->"fdd4db37-d22e-46a9-920c-451ca139b32c"]
+    }], "TableText",ExpressionUUID->"3b14734e-0f1c-4846-994f-61c33f78841b"]},
+   {
+    RowBox[{
+     ButtonBox["Vercosine",
+      BaseStyle->"Link",
+      ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Vercosine"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the versed cosine function, ",
+     Cell[BoxData[
+      FormBox[
+       RowBox[{
+        RowBox[{"vercosine", "(", "z", ")"}], "=", 
+        RowBox[{"2", " ", 
+         RowBox[{
+          SuperscriptBox["cos", "2"], "(", 
+          RowBox[{"z", "/", "2"}], ")"}]}]}], TraditionalForm]], "InlineMath",
+      ExpressionUUID->"19fa3c00-1096-40ce-8c66-6e8c40f8eaf5"]
+    }], "TableText",ExpressionUUID->"6e4c2b9f-dd56-44f7-9f36-e3911b4b759b"]},
+   {
+    RowBox[{
+     ButtonBox["InverseVersine",
+      BaseStyle->"Link",
+      ButtonData->"paclet:TheRealCStover/Trigonometry/ref/InverseVersine"], 
+     "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Versine",
+        BaseStyle->"Link",
+        ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Versine"], "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "8fe5a3d1-4ac2-4b86-b58d-1c8c1a7c5049"]
+    }], "TableText",ExpressionUUID->"c3bed5ed-a22a-432b-8829-e5b4464ac1d8"]},
+   {
+    RowBox[{
+     ButtonBox["InverseVercosine",
+      BaseStyle->"Link",
+      ButtonData->"paclet:TheRealCStover/Trigonometry/ref/InverseVercosine"], 
+     "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Vercosine",
+        BaseStyle->"Link",
+        ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Vercosine"], "[", 
+       
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "7b6c0251-56d8-4229-92e3-ba765b186b50"]
+    }], "TableText",ExpressionUUID->"9f491150-88f9-437d-8443-e523f059593d"]}
+  }]], "DefinitionBox",
+ CellChangeTimes->{{3.871335975139495*^9, 3.871336106538609*^9}, {
+  3.871336138490879*^9, 3.871336178376671*^9}, {3.8713364014634542`*^9, 
+  3.871336488459173*^9}},
+ CellID->1821204584,ExpressionUUID->"d43737ea-8474-4a78-bd18-168e49893315"],
+
+Cell["Versed sine and versed cosine.", "Caption",
+ CellChangeTimes->{{3.871336114315112*^9, 3.871336128739017*^9}, {
+  3.871336343289853*^9, 3.871336344134968*^9}},
+ CellID->901022597,ExpressionUUID->"b2fa0cd7-0154-41ed-b394-6e9929bfbff5"],
+
+Cell[TextData[{
+ "The shorthand formulas ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"versine", "(", "z", ")"}], "=", 
+    RowBox[{"1", "-", 
+     RowBox[{"cos", "(", "z", ")"}]}]}], TraditionalForm]], "InlineMath",
+  ExpressionUUID->"e18c1056-661c-4f0e-805f-b36cfdebbdeb"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"vercosine", "(", "z", ")"}], "=", 
+    RowBox[{"1", "+", 
+     RowBox[{"cos", "(", "z", ")"}]}]}], TraditionalForm]], "InlineMath",
+  ExpressionUUID->"7e9fdd5f-528c-4d1b-938f-472600ca2361"],
+ " are often employed; the equivalence of these expressions to the ones given \
+in terms of ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["sin", "2"], TraditionalForm]], "InlineMath",ExpressionUUID->
+  "3a80450a-1ff4-441f-80e6-4ac1bce0b9ec"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["cos", "2"], TraditionalForm]], "InlineMath",ExpressionUUID->
+  "64495749-a8eb-4382-9563-2bea226a6445"],
+ " above can be easily verified using ",
+ Cell[BoxData[
+  ButtonBox["FullSimplify",
+   BaseStyle->"Link"]], "InlineFormula",ExpressionUUID->
+  "774411f7-e379-469c-b9da-aef6088ea3dd"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.871339893200081*^9, 3.871339927430731*^9}, {
+   3.871341437402568*^9, 3.8713414473850813`*^9}, {3.871581638586463*^9, 
+   3.871581672330599*^9}, {3.871581722083273*^9, 3.871581812253886*^9}, {
+   3.871582409736833*^9, 3.871582493561987*^9}, 3.87158253027372*^9, {
+   3.871582639150218*^9, 3.871582649381563*^9}},
+ CellID->2119569176,ExpressionUUID->"45bd59a6-eea8-46de-9cff-5b6464f82db0"],
+
+Cell[TextData[{
+ "As mentioned above, there are many additional functions that can be built \
+by combining the co- and ver- operators. For example, these two operators \
+combine to produce ",
+ Cell[BoxData[
+  ButtonBox["Coversine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Coversine"]], 
+  "InlineFormula",ExpressionUUID->"a3dc07fa-ff5b-4e9d-b58e-a4d073d61a95"],
+ " and ",
+ Cell[BoxData[
+  ButtonBox["Covercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Covercosine"]], 
+  "InlineFormula",ExpressionUUID->"efa33ea9-8a88-4fd3-9443-7e23019f0a15"],
+ ", which are the co- versions of the ",
+ Cell[BoxData[
+  ButtonBox["Versine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Versine"]], 
+  "InlineFormula",ExpressionUUID->"2ba8fe2c-6942-4a5f-9360-1f915fb471b0"],
+ " and ",
+ Cell[BoxData[
+  ButtonBox["Vercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Vercosine"]], 
+  "InlineFormula",ExpressionUUID->"b2a099b5-8903-4160-ad6e-8dbdc8cb72c0"],
+ " functions discussed above (i.e., ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"coversine", "(", "z", ")"}], "=", 
+    RowBox[{
+     RowBox[{"1", "-", 
+      RowBox[{"cos", "(", 
+       RowBox[{
+        RowBox[{"\[Pi]", "/", "2"}], "-", "z"}], ")"}]}], "=", 
+     RowBox[{"1", "-", 
+      RowBox[{"sin", "(", "z", ")"}]}]}]}], TraditionalForm]], "InlineMath",
+  ExpressionUUID->"fdbd359e-a16a-45c4-8214-67eb36ec1d73"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"covercosine", "(", "z", ")"}], "=", 
+    RowBox[{
+     RowBox[{"1", "+", 
+      RowBox[{"cos", "(", 
+       RowBox[{
+        RowBox[{"\[Pi]", "/", "2"}], "-", "z"}], ")"}]}], "=", 
+     RowBox[{"1", "+", 
+      RowBox[{"sin", "(", "z", ")"}]}]}]}], TraditionalForm]], "InlineMath",
+  ExpressionUUID->"a3dd3ade-b63f-458a-88bf-5c517eb1f1c1"],
+ ")."
+}], "Text",
+ CellChangeTimes->{{3.871339893200081*^9, 3.871339927430731*^9}, {
+  3.871341437402568*^9, 3.8713414473850813`*^9}, {3.871581638586463*^9, 
+  3.871581672330599*^9}, {3.871581722083273*^9, 3.871581755136343*^9}, {
+  3.8715825491730433`*^9, 3.871582782801964*^9}},
+ CellID->1348439880,ExpressionUUID->"c1b7e5b9-8f4c-4a39-bb63-e84a015e1c89"],
+
+Cell[BoxData[GridBox[{
+   {
+    RowBox[{
+     ButtonBox["Coversine",
+      BaseStyle->"Link",
+      ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Coversine"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the coversed sine function, ",
+     Cell[BoxData[
+      FormBox[
+       RowBox[{
+        RowBox[{"coversine", "(", "z", ")"}], "=", 
+        RowBox[{"1", "-", 
+         RowBox[{"cos", "(", 
+          RowBox[{
+           RowBox[{"\[Pi]", "/", "2"}], "-", "z"}], ")"}]}]}], 
+       TraditionalForm]], "InlineMath",ExpressionUUID->
+      "297f73ce-fba5-44f3-85c2-4cc4c957e407"],
+     " "
+    }], "TableText",ExpressionUUID->"b98be339-05c4-40b8-aaa5-d0b811ee3ad7"]},
+   {
+    RowBox[{
+     ButtonBox["Covercosine",
+      BaseStyle->"Link",
+      ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Covercosine"], "[", 
+     
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the coversed cosine function, ",
+     Cell[BoxData[
+      FormBox[
+       RowBox[{
+        RowBox[{"covercosine", "(", "z", ")"}], "=", 
+        RowBox[{"1", "+", 
+         RowBox[{"cos", "(", 
+          RowBox[{
+           RowBox[{"\[Pi]", "/", "2"}], "-", "z"}], ")"}]}]}], 
+       TraditionalForm]], "InlineMath",ExpressionUUID->
+      "6bc99f4e-9785-4fce-a2a6-067d08be8653"]
+    }], "TableText",ExpressionUUID->"8bd3193b-affa-4aef-9891-f597c19e5a5a"]},
+   {
+    RowBox[{
+     ButtonBox["InverseCoversine",
+      BaseStyle->"Link",
+      ButtonData->"paclet:TheRealCStover/Trigonometry/ref/InverseCoversine"], 
+     "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Coversine",
+        BaseStyle->"Link",
+        ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Coversine"], "[", 
+       
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "655fa151-8659-4417-a7b0-bb1eb962c87f"]
+    }], "TableText",ExpressionUUID->"8ad75dbb-525d-4690-bc0e-ae98b67538d4"]},
+   {
+    RowBox[{
+     ButtonBox["InverseCovercosine",
+      BaseStyle->"Link",
+      ButtonData->
+       "paclet:TheRealCStover/Trigonometry/ref/InverseCovercosine"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Covercosine",
+        BaseStyle->"Link",
+        ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Covercosine"], 
+       "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "4d7920d1-e134-4371-93f8-947553440c3e"]
+    }], "TableText",ExpressionUUID->"8ff2fce3-9e6d-4df2-92b8-6203046c90ae"]}
+  }]], "DefinitionBox",
+ CellChangeTimes->{{3.871582924795926*^9, 3.871583061815076*^9}},
+ CellID->666901972,ExpressionUUID->"c14c4445-e8df-4a9b-b5f1-3b244bbdc258"],
+
+Cell["\<\
+Combining co- and ver- to get new lesser-known trig functions.\
+\>", "Caption",
+ CellChangeTimes->{{3.871583066088242*^9, 3.871583075774976*^9}},
+ CellID->904289711,ExpressionUUID->"072c0602-720b-4cac-a110-ae1153d73fe1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{"ha", " ", 
+   RowBox[{"f", "(", "x", ")"}]}], 
+  TraditionalForm]], \
+"InlineMath",ExpressionUUID->"4c392bef-c98a-4656-80cb-02446c5d0116"]], \
+"Subsection",
+ CellChangeTimes->{{3.871335611920306*^9, 3.871335616205224*^9}, {
+   3.871335675487729*^9, 3.871335740936252*^9}, 3.8713358562583113`*^9},
+ CellID->906556815,ExpressionUUID->"b8ce696b-5087-4ead-88ff-9538da284bd6"],
+
+Cell[TextData[{
+ "For a given function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]], "InlineMath",
+  ExpressionUUID->"a0c49e5b-fee6-429e-8b80-4ece1c4ce830"],
+ ", denote by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"ha", " ", 
+    RowBox[{"f", "(", "x", ")"}]}], TraditionalForm]], "InlineMath",
+  ExpressionUUID->"132b6311-0225-4949-8204-0a48a5aea4e1"],
+ " the halved ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]], "InlineMath",
+  ExpressionUUID->"8f12e1d1-075e-479c-9c1d-258d042b70b0"],
+ " or haversed ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]], "InlineMath",
+  ExpressionUUID->"6db0b97d-0bff-42cf-acb1-4c527aa01239"],
+ ", defined by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"ha", " ", 
+     RowBox[{"f", "(", "x", ")"}]}], "=", 
+    RowBox[{
+     RowBox[{"f", "(", "x", ")"}], "/", "2"}]}], TraditionalForm]], 
+  "InlineMath",ExpressionUUID->"bc9d2e7a-744a-4777-93f2-5264c370dc2f"],
+ ". "
+}], "Text",
+ CellChangeTimes->{{3.871335747327982*^9, 3.871335836747034*^9}, {
+   3.871337917906185*^9, 3.8713379608169317`*^9}, 3.871341454796586*^9, {
+   3.871343958886051*^9, 3.8713439600996733`*^9}},
+ CellID->1709079176,ExpressionUUID->"d7a4c3a4-bd2b-4e75-8840-5e838eb834e1"],
+
+Cell[TextData[{
+ "The most elementary of these comes as a combination of the ha- and ver- \
+operators, producing the haversed sine and haversed cosine functions ",
+ Cell[BoxData[
+  ButtonBox["Haversine",
+   BaseStyle->"Link"]], "InlineFormula",ExpressionUUID->
+  "b809f1d0-e5cc-45fa-b8c4-0772526958ac"],
+ " and ",
+ Cell[BoxData[
+  ButtonBox["Havercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Havercosine"]], 
+  "InlineFormula",ExpressionUUID->"c6e7b1b6-b52b-49fc-9001-49b493cd3e5c"],
+ ". Note that ",
+ Cell[BoxData[
+  ButtonBox["Haversine",
+   BaseStyle->"Link"]], "InlineFormula",ExpressionUUID->
+  "384fe504-ecb9-47bd-ba6c-3ea49ac4c7a2"],
+ " is an example of a lesser-known trig function included in the Wolfram \
+Language while ",
+ Cell[BoxData[
+  ButtonBox["Havercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Havercosine"]], 
+  "InlineFormula",ExpressionUUID->"2ad82a30-65d2-4fef-998f-5283b57f648c"],
+ " is included only in this paclet."
+}], "Text",
+ CellChangeTimes->{{3.871335747327982*^9, 3.871335836747034*^9}, {
+  3.871337917906185*^9, 3.8713379608169317`*^9}, {3.871581478548057*^9, 
+  3.8715815085503073`*^9}, {3.8715828222630053`*^9, 3.8715828795890207`*^9}, {
+  3.871583229373996*^9, 3.8715832466018677`*^9}, {3.8715834314271383`*^9, 
+  3.871583498863859*^9}, {3.871586182046183*^9, 3.8715861974282417`*^9}},
+ CellID->660114305,ExpressionUUID->"849acd47-c0b0-43f9-89b9-f539c09faf38"],
+
+Cell[BoxData[GridBox[{
+   {
+    RowBox[{
+     ButtonBox["Haversine",
+      BaseStyle->"Link"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the haversed sine function, ",
+     Cell[BoxData[
+      FormBox[
+       RowBox[{
+        RowBox[{"haversine", "(", "z", ")"}], "=", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"versine", "(", "z", ")"}], "/", "2"}], "=", 
+         RowBox[{
+          SuperscriptBox["sin", 
+           RowBox[{"2", "\[InvisibleApplication]"}]], "(", 
+          RowBox[{"z", "/", "2"}], ")"}]}]}], TraditionalForm]], "InlineMath",
+      ExpressionUUID->"797b69a4-d6e5-4664-97e8-50b28dc3114a"]
+    }], "TableText",ExpressionUUID->"e7644b98-8695-4949-9571-7a9aec0b5eec"]},
+   {
+    RowBox[{
+     ButtonBox["Havercosine",
+      BaseStyle->"Link",
+      ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Havercosine"], "[", 
+     
+     StyleBox["z", "TI"], "]"}], Cell[TextData[Cell[BoxData[Cell[TextData[{
+      "the haversed cosine function, ",
+      Cell[BoxData[
+       FormBox[
+        RowBox[{
+         RowBox[{"havercosine", "(", "z", ")"}], "=", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"vercosine", "(", "z", ")"}], "/", "2"}], "=", 
+          RowBox[{
+           SuperscriptBox["cos", 
+            RowBox[{"2", "\[InvisibleApplication]"}]], "(", 
+           RowBox[{"z", "/", "2"}], ")"}]}]}], TraditionalForm]], 
+       "InlineMath",ExpressionUUID->"5887d216-2ffa-4efb-81f9-a2b0266e7605"]
+     }], "TableText",ExpressionUUID->"d2730cc5-1297-46ae-9dae-64f7fcd723a9"]],
+     
+     CellChangeTimes->{{3.871335062380927*^9, 3.87133512490633*^9}, {
+       3.871335218588975*^9, 3.87133521858899*^9}, 3.871335263773498*^9, {
+       3.8713353130083*^9, 3.8713353274335747`*^9}, {3.871337964691921*^9, 
+       3.871338012421114*^9}, 3.871583211389864*^9, {3.871583299295635*^9, 
+       3.871583301215892*^9}},ExpressionUUID->
+     "b17f0385-cde5-47a1-a597-08ed2f6b4450"]], "TableText",ExpressionUUID->
+     "2457a94e-3e36-4781-a574-683fa15abc62"]},
+   {
+    RowBox[{
+     ButtonBox["InverseHaversine",
+      BaseStyle->"Link"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Haversine",
+        BaseStyle->"Link"], "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "a76f057c-9a3d-4da9-a5b6-ad3f50096f3a"]
+    }], "TableText",ExpressionUUID->"9a5ea19e-6309-4882-8040-1b4bd91c4892"]},
+   {
+    RowBox[{
+     ButtonBox["InverseHavercosine",
+      BaseStyle->"Link",
+      ButtonData->
+       "paclet:TheRealCStover/Trigonometry/ref/InverseHavercosine"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Havercosine",
+        BaseStyle->"Link",
+        ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Havercosine"], 
+       "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "bedeb7a2-1be6-41e6-a794-565c01c13329"]
+    }], "TableText",ExpressionUUID->"5699981e-0584-4e4d-9cb9-65db0c9d0bef"]}
+  }]], "DefinitionBox",
+ CellChangeTimes->{{3.871335062380927*^9, 3.87133512490633*^9}, {
+   3.871335218588975*^9, 3.87133521858899*^9}, 3.871335263773498*^9, {
+   3.8713353130083*^9, 3.8713353274335747`*^9}, {3.871337964691921*^9, 
+   3.871338012421114*^9}, 3.871583211389864*^9, {3.871583299295635*^9, 
+   3.871583385433077*^9}, {3.8715842443818417`*^9, 3.871584246285128*^9}},
+ CellID->104081891,ExpressionUUID->"87cda49e-b94b-47a1-ac6a-cc15731c2166"],
+
+Cell["\<\
+Haversed sine and haversed cosine are generated by combining the ha- and ver- \
+operators.\
+\>", "Caption",
+ CellChangeTimes->{{3.871335332381454*^9, 3.871335344717918*^9}, {
+  3.87133802364081*^9, 3.871338047232544*^9}, {3.871583086624776*^9, 
+  3.871583090237481*^9}, {3.8715832516574497`*^9, 3.871583296999063*^9}, {
+  3.8715834063797503`*^9, 3.8715834143059187`*^9}, {3.871583462411236*^9, 
+  3.8715834676171494`*^9}},
+ CellID->1252653379,ExpressionUUID->"5391d822-26b6-49d0-b723-aef2e8196ce2"],
+
+Cell["\<\
+As mentioned above, there are many additional functions that can be built by \
+combining ha- with the co- and ver- operators. These come standard in the \
+Trigonometry paclet.\
+\>", "Text",
+ CellChangeTimes->{{3.871339893200081*^9, 3.871339927430731*^9}, {
+  3.871341437402568*^9, 3.8713414473850813`*^9}, {3.8713414867932777`*^9, 
+  3.871341498542162*^9}, {3.871582893828289*^9, 3.871582894524723*^9}, {
+  3.87158310139758*^9, 3.8715831073740387`*^9}, {3.871584411740829*^9, 
+  3.871584418043865*^9}},
+ CellID->640603733,ExpressionUUID->"190373f1-b721-4f45-9ec1-6e500d683e94"],
+
+Cell[BoxData[GridBox[{
+   {
+    RowBox[{
+     ButtonBox["Cohaversine",
+      BaseStyle->"Link",
+      ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Cohaversine"], "[", 
+     
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the cohaversed sine function, ",
+     Cell[BoxData[
+      FormBox[
+       RowBox[{
+        RowBox[{"cohaversine", "(", "z", ")"}], "=", 
+        RowBox[{
+         RowBox[{"haversine", "(", 
+          RowBox[{
+           RowBox[{"\[Pi]", "/", "2"}], "-", "z"}], ")"}], "=", 
+         RowBox[{
+          RowBox[{"1", "/", "2"}], 
+          RowBox[{"(", 
+           RowBox[{"1", "-", 
+            RowBox[{"sin", "(", "z", ")"}]}], ")"}]}]}]}], TraditionalForm]], 
+      "InlineMath",ExpressionUUID->"4361d05d-1ee4-4999-ab75-778a0acba181"]
+    }], "TableText",ExpressionUUID->"54bc2724-1e4f-49db-b9df-af308defe9a5"]},
+   {
+    RowBox[{
+     ButtonBox["Hacoversine",
+      BaseStyle->"Link",
+      ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Hacoversine"], "[", 
+     
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the haversed coversine function, which is equivalent to ",
+     Cell[BoxData[
+      RowBox[{
+       RowBox[{
+        ButtonBox["Cohaversine",
+         BaseStyle->"Link",
+         ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Cohaversine"], 
+        "[", 
+        StyleBox["z", "TI"], "]"}], " "}]], "InlineFormula",ExpressionUUID->
+      "67a4a71c-1f7e-4bb3-9d5e-50b96aedba57"],
+     "for all ",
+     Cell[BoxData[
+      StyleBox["z", "TI"]], "InlineFormula",ExpressionUUID->
+      "c2853b95-4ee2-43a8-b4c2-cbef3fab8262"]
+    }], "TableText",ExpressionUUID->"c8d7a76e-5de2-454a-80bf-393db88276c2"]},
+   {
+    RowBox[{
+     ButtonBox["Cohavercosine",
+      BaseStyle->"Link",
+      ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Cohavercosine"], 
+     "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the cohaversed cosine function, ",
+     Cell[BoxData[
+      FormBox[
+       RowBox[{
+        RowBox[{"cohavercosine", "(", "z", ")"}], "=", 
+        RowBox[{
+         RowBox[{"havercosine", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"\[Pi]", "/", "2"}], "-", "z"}], ")"}]}], "=", 
+         RowBox[{
+          RowBox[{"1", "/", "2"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"sin", "(", "z", ")"}], "+", "1"}], ")"}]}]}]}], 
+       TraditionalForm]], "InlineMath",ExpressionUUID->
+      "70ea0f8b-988b-416c-80d2-547835408010"]
+    }], "TableText",ExpressionUUID->"d0859771-c008-429c-92e3-4b7fe52c2fd1"]},
+   {
+    RowBox[{
+     ButtonBox["Hacovercosine",
+      BaseStyle->"Link",
+      ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Hacovercosine"], 
+     "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the haversed covercosine function, which is equivalent to ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Cohavercosine",
+        BaseStyle->"Link",
+        ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Cohavercosine"], 
+       "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "7f253212-f08a-4e8f-9422-3c1edc4c43af"],
+     " for all ",
+     Cell[BoxData[
+      StyleBox["z", "TI"]], "InlineFormula",ExpressionUUID->
+      "2f564f81-c8ea-4657-9c55-cb94d2494221"]
+    }], "TableText",ExpressionUUID->"56b15edd-b404-437a-81a8-73112bc84a6e"]},
+   {
+    RowBox[{
+     ButtonBox["InverseCohaversine",
+      BaseStyle->"Link",
+      ButtonData->
+       "paclet:TheRealCStover/Trigonometry/ref/InverseCohaversine"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Cohaversine",
+        BaseStyle->"Link",
+        ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Cohaversine"], 
+       "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "9b59c846-68e4-4c75-a9d4-9ced47f5a259"]
+    }], "TableText",ExpressionUUID->"f632c028-9d3c-4c03-9253-355f8985712b"]},
+   {
+    RowBox[{
+     ButtonBox["InverseHacoversine",
+      BaseStyle->"Link",
+      ButtonData->
+       "paclet:TheRealCStover/Trigonometry/ref/InverseHacoversine"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Hacoversine",
+        BaseStyle->"Link",
+        ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Hacoversine"], 
+       "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "0f8b2858-c08c-46c5-a183-e9ec696ec6e5"],
+     ", also equivalent to ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["InverseCohaversine",
+        BaseStyle->"Link",
+        ButtonData->
+         "paclet:TheRealCStover/Trigonometry/ref/InverseCohaversine"], "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "0361788a-e2ca-49af-bd4b-d323d202e19e"]
+    }], "TableText",ExpressionUUID->"b48053c9-6db2-4243-b2d3-8584a06d012a"]},
+   {
+    RowBox[{
+     ButtonBox["InverseCohavercosine",
+      BaseStyle->"Link",
+      ButtonData->
+       "paclet:TheRealCStover/Trigonometry/ref/InverseCohavercosine"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Cohavercosine",
+        BaseStyle->"Link",
+        ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Cohavercosine"], 
+       "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "788febe5-67dd-445f-8c25-848b4b0524c5"]
+    }], "TableText",ExpressionUUID->"9deee90e-b41f-4b04-b6c1-bd9ce1d58a52"]},
+   {
+    RowBox[{
+     ButtonBox["InverseHacovercosine",
+      BaseStyle->"Link",
+      ButtonData->
+       "paclet:TheRealCStover/Trigonometry/ref/InverseHacovercosine"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Hacovercosine",
+        BaseStyle->"Link",
+        ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Hacovercosine"], 
+       "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "48bdddfd-bf54-4f6b-9847-3dca2156d8b6"],
+     ", also equivalent to ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["InverseCohavercosine",
+        BaseStyle->"Link",
+        ButtonData->
+         "paclet:TheRealCStover/Trigonometry/ref/InverseCohavercosine"], "[", 
+       
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "ab5fc5d9-1091-4d26-871f-46db87ec0211"]
+    }], "TableText",ExpressionUUID->"da1764b5-b36f-4130-b9e1-24fd70885f47"]}
+  }]], "DefinitionBox",
+ CellChangeTimes->{{3.8715831204844933`*^9, 3.87158314688828*^9}, {
+  3.871583538063373*^9, 3.8715836433157167`*^9}, {3.871583990934536*^9, 
+  3.871584169892477*^9}, {3.871584206491078*^9, 3.871584235613741*^9}, {
+  3.871584311334337*^9, 3.871584379706441*^9}, {3.871584431815083*^9, 
+  3.871584434253755*^9}},
+ CellID->1678984977,ExpressionUUID->"c758177c-338c-4296-ba54-cf867a3ecd74"],
+
+Cell[TextData[{
+ StyleBox["Lots",
+  FontWeight->"Bold"],
+ " of new functions can be built by combining co-, ver-, and ha-."
+}], "Caption",
+ CellChangeTimes->{{3.871584381029039*^9, 3.871584396828493*^9}, 
+   3.871589043965848*^9},
+ CellID->765386859,ExpressionUUID->"8ceb4990-873f-411c-8cb3-e29941697c2f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{"ex", " ", 
+   RowBox[{"f", "(", "x", ")"}]}], 
+  TraditionalForm]], \
+"InlineMath",ExpressionUUID->"617f9b88-25c7-4bb4-99bb-d4b0e5f10a18"]], \
+"Subsection",
+ CellChangeTimes->{{3.8713415504931803`*^9, 3.871341572325197*^9}},
+ CellID->1685660051,ExpressionUUID->"8c32c786-f276-427b-9f89-61f92533a9d8"],
+
+Cell[TextData[{
+ "For a given function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]], "InlineMath",
+  ExpressionUUID->"f49cef54-11dc-4dc0-aa00-eedfe07cfa05"],
+ ", denote by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"ex", " ", 
+    RowBox[{"f", "(", "x", ")"}]}], TraditionalForm]], "InlineMath",
+  ExpressionUUID->"cede9c3e-251b-44b1-ac39-f83cf30018ac"],
+ " the exterior, external, or outward ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "x", ")"}], TraditionalForm]], "InlineMath",
+  ExpressionUUID->"cce2cb70-afde-4820-bc68-aa574a43e815"],
+ ", defined by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"ex", " ", 
+     RowBox[{"f", "(", "x", ")"}]}], "=", 
+    RowBox[{
+     RowBox[{"f", "(", "x", ")"}], "-", "1"}]}], TraditionalForm]], 
+  "InlineMath",ExpressionUUID->"5b90507f-59d9-493f-9f0d-06e41660bfa1"],
+ ". "
+}], "Text",
+ CellChangeTimes->{{3.871335747327982*^9, 3.871335836747034*^9}, {
+   3.871337917906185*^9, 3.8713379608169317`*^9}, 3.871341454796586*^9, {
+   3.8713416532454777`*^9, 3.871341683066972*^9}},
+ CellID->1277534367,ExpressionUUID->"46679003-b8a4-4f12-9ffc-14b819032b86"],
+
+Cell["\<\
+The two most basic such functions are the exterior secant and exterior \
+cosecant, both of which are defined in the Trigonometry paclet.\
+\>", "Text",
+ CellChangeTimes->{{3.871335747327982*^9, 3.871335836747034*^9}, {
+  3.8713358755558653`*^9, 3.871335964892218*^9}, {3.871336375997719*^9, 
+  3.871336395492298*^9}, {3.871338424029789*^9, 3.871338425072789*^9}, {
+  3.8713396534630833`*^9, 3.871339704092333*^9}, {3.8713417018558817`*^9, 
+  3.871341703527619*^9}, {3.871341795370385*^9, 3.871341801886825*^9}},
+ CellID->726428311,ExpressionUUID->"6f682337-ed3c-4623-8a02-dc7e865a9127"],
+
+Cell[BoxData[GridBox[{
+   {
+    RowBox[{
+     ButtonBox["Exsecant",
+      BaseStyle->"Link",
+      ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Exsecant"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the exterior secant function, ",
+     Cell[BoxData[
+      FormBox[
+       RowBox[{
+        RowBox[{"exsecant", "(", "z", ")"}], "=", 
+        RowBox[{
+         RowBox[{"sec", "(", "z", ")"}], "-", "1"}]}], TraditionalForm]], 
+      "InlineMath",ExpressionUUID->"1ee4e2a2-76a7-4aa7-ac95-eae05a9d5d44"]
+    }], "TableText",ExpressionUUID->"30663e89-0a40-4d5b-9c5c-cf02065ee050"]},
+   {
+    RowBox[{
+     ButtonBox["Excosecant",
+      BaseStyle->"Link",
+      ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Excosecant"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the exterior cosecant function, ",
+     Cell[BoxData[
+      FormBox[
+       RowBox[{
+        RowBox[{"excosecant", "(", "z", ")"}], "=", 
+        RowBox[{
+         RowBox[{"csc", "(", "z", ")"}], "-", "1"}]}], TraditionalForm]], 
+      "InlineMath",ExpressionUUID->"9c769ef2-9231-457e-b5e0-3cfbea118d91"]
+    }], "TableText",ExpressionUUID->"07c69fcc-c0b3-4b50-8891-37dc185a73e2"]},
+   {
+    RowBox[{
+     ButtonBox["InverseExsecant",
+      BaseStyle->"Link",
+      ButtonData->"paclet:TheRealCStover/Trigonometry/ref/InverseExsecant"], 
+     "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Exsecant",
+        BaseStyle->"Link",
+        ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Exsecant"], "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "6b9cc90d-044d-48d6-ac21-7ec7a05902c4"]
+    }], "TableText",ExpressionUUID->"7f8ef435-ef04-4a11-91d4-2443f0f3926e"]},
+   {
+    RowBox[{
+     ButtonBox["InverseExcosecant",
+      BaseStyle->"Link",
+      ButtonData->"paclet:TheRealCStover/Trigonometry/ref/InverseExcosecant"],
+      "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Excosecant",
+        BaseStyle->"Link",
+        ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Excosecant"], "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "5833c368-541d-4c21-9a27-2e51ca7762bb"]
+    }], "TableText",ExpressionUUID->"8d3a3dc4-851f-4d34-a6c0-b66516b644f2"]}
+  }]], "DefinitionBox",
+ CellChangeTimes->{{3.871335975139495*^9, 3.871336106538609*^9}, {
+  3.871336138490879*^9, 3.871336178376671*^9}, {3.8713364014634542`*^9, 
+  3.871336488459173*^9}, {3.8713418073489637`*^9, 3.871341935610545*^9}},
+ CellID->636089782,ExpressionUUID->"1eb34f21-fa54-4800-a264-f874bfd136f9"],
+
+Cell["Exsecant and excosecant.", "Caption",
+ CellChangeTimes->{{3.871335332381454*^9, 3.871335344717918*^9}, {
+  3.87133802364081*^9, 3.871338047232544*^9}, {3.8713420262295513`*^9, 
+  3.871342037245317*^9}},
+ CellID->1713012049,ExpressionUUID->"71e027b6-f3bf-4e6f-8bd3-7a7f7e8e6143"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Naming Conventions and Combining Operators", "Section",
+ CellChangeTimes->{{3.871339933438899*^9, 3.871339940781825*^9}, 
+   3.871341865729844*^9, {3.871590058537653*^9, 3.871590064408231*^9}},
+ CellID->560838859,ExpressionUUID->"8d497b87-ac88-4bda-9548-e4f454b8cd6c"],
+
+Cell["\<\
+As demonstrated above, operators such as co-, ver-, ha-, and ex- can be \
+combined to create new functions. For example, the result of the process \
+\>", "Text",
+ CellChangeTimes->{{3.871589119946306*^9, 3.871589297890401*^9}, {
+  3.8715893419795837`*^9, 3.871589366184911*^9}},
+ CellID->1402759867,ExpressionUUID->"5c1b8ee3-d82f-4c35-8a15-497151f9cfb4"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["Sin",
+   BaseStyle->"Link"]], "InlineFormula",ExpressionUUID->
+  "cea9cb5c-4418-4e20-88c3-0c46de824838"],
+ " \[RightArrow] ",
+ StyleBox["co-",
+  FontWeight->"Bold"],
+ " (yielding ",
+ Cell[BoxData[
+  ButtonBox["Cos",
+   BaseStyle->"Link"]], "InlineFormula",ExpressionUUID->
+  "b74d3e32-42dd-43c5-9751-9a675dd5b5b7"],
+ ") \[RightArrow] ",
+ StyleBox["ver-",
+  FontWeight->"Bold"],
+ " (yielding ",
+ Cell[BoxData[
+  ButtonBox["Vercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Vercosine"]], 
+  "InlineFormula",ExpressionUUID->"178b4a31-e125-40ea-bcf8-5a2e5f815589"],
+ ") \[RightArrow] ",
+ StyleBox["ha-",
+  FontWeight->"Bold"],
+ " (yielding ",
+ Cell[BoxData[
+  ButtonBox["Havercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Havercosine"]], 
+  "InlineFormula",ExpressionUUID->"8b0f9824-90f3-419c-8166-d824cc4fa176"],
+ ") \[RightArrow] ",
+ StyleBox["co-",
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.871589119946306*^9, 3.871589297890401*^9}, {
+  3.8715893419795837`*^9, 3.871589376874043*^9}},
+ TextAlignment->Center,
+ CellID->101188113,ExpressionUUID->"2d26ac88-db35-4f55-8588-3be398a63b6f"],
+
+Cell[TextData[{
+ "is the ",
+ Cell[BoxData[
+  ButtonBox["Cohavercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Cohavercosine"]], 
+  "InlineFormula",ExpressionUUID->"962b0d64-283c-495b-8e50-ac17800def69"],
+ " function, provided in this paclet. This immediately raises some noteworthy \
+questions."
+}], "Text",
+ CellChangeTimes->{{3.871589119946306*^9, 3.871589297890401*^9}, {
+  3.8715893419795837`*^9, 3.871589375498303*^9}, {3.871589528600429*^9, 
+  3.871589550489381*^9}, {3.871647982215584*^9, 3.871647998630171*^9}},
+ CellID->2021969787,ExpressionUUID->"58678c9e-52cb-4bfc-9c0a-dd70f2188e29"],
+
+Cell["\<\
+One potential question is: Can we continue to apply more operators to create \
+increasingly complex functions? The short answer is \"Kind of...\" in the \
+sense that yes, you're more than welcome to do such a thing, but the end \
+result may lack utility and hence be rendered pointless.\
+\>", "Text",
+ CellChangeTimes->{{3.871589119946306*^9, 3.871589297890401*^9}, {
+   3.8715893419795837`*^9, 3.87158936150994*^9}, {3.871590049384617*^9, 
+   3.871590133694551*^9}, 3.87159130574337*^9, {3.871646860139781*^9, 
+   3.871646863692195*^9}, {3.871648041854499*^9, 3.8716480704948263`*^9}, {
+   3.8716482298494997`*^9, 3.871648352827948*^9}},
+ CellID->1161796311,ExpressionUUID->"92a95943-1736-4cad-9efd-05bdc09f5793"],
+
+Cell[TextData[{
+ "On the topic of utility, one may then ask: What about the functions in this \
+paclet make them more useful than a function created by applying combinations \
+of the four operators at random? Generally speaking, the inclusion of the \
+functions in this paclet isn't meant to be a testament to how useful they are \
+or aren't, but is instead meant highlight a subset of functions which gained \
+some degree of use in the past. The fact is that ",
+ Cell[BoxData[
+  ButtonBox["Versine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Versine"]], 
+  "InlineFormula",ExpressionUUID->"92ad0314-c735-48da-9d5f-00ba747de310"],
+ ", ",
+ Cell[BoxData[
+  ButtonBox["Havercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Havercosine"]], 
+  "InlineFormula",ExpressionUUID->"53f1cc1f-caf7-443b-9a0f-be37f8137a4c"],
+ ", ",
+ Cell[BoxData[
+  ButtonBox["Cohaversine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Cohaversine"]], 
+  "InlineFormula",ExpressionUUID->"0df5ab43-cfda-4186-9fe6-5d1dea7986db"],
+ ", and ",
+ Cell[BoxData[
+  ButtonBox["Excosecant",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Excosecant"]], 
+  "InlineFormula",ExpressionUUID->"a81481c3-b3fb-4916-99df-b4f37deff4b2"],
+ " (for example) have a historical footprint wherein authors from antiquity \
+found them useful; thus, they were chosen for inclusion in this paclet."
+}], "Text",
+ CellChangeTimes->{{3.871589119946306*^9, 3.871589297890401*^9}, {
+   3.8715893419795837`*^9, 3.87158936150994*^9}, {3.871590049384617*^9, 
+   3.871590133694551*^9}, 3.87159130574337*^9, {3.871646860139781*^9, 
+   3.871646863692195*^9}, {3.871648041854499*^9, 3.8716480704948263`*^9}, {
+   3.8716482298494997`*^9, 3.8716486058695793`*^9}, {3.8716487037757874`*^9, 
+   3.8716488767899437`*^9}},
+ CellID->1676513500,ExpressionUUID->"b48623b0-5617-48c5-bd49-ce057b17c342"],
+
+Cell[TextData[{
+ "Another worthwhile question stems from the observation that ",
+ Cell[BoxData[
+  ButtonBox["Cohavercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Cohavercosine"]], 
+  "InlineFormula",ExpressionUUID->"80e90077-eedb-4990-9166-2cf5b21c9917"],
+ " is the exact same as the function ",
+ Cell[BoxData[
+  ButtonBox["Hacovercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Hacovercosine"]], 
+  "InlineFormula",ExpressionUUID->"1247be3f-29e8-467b-b43d-b0b3bdec7f80"],
+ ", which you get when you do "
+}], "Text",
+ CellChangeTimes->{{3.871589119946306*^9, 3.871589297890401*^9}, {
+   3.8715893419795837`*^9, 3.87158936150994*^9}, {3.871590049384617*^9, 
+   3.871590133694551*^9}, {3.8715913072508993`*^9, 3.8715913330688677`*^9}, 
+   3.871591592450531*^9, {3.871648896251357*^9, 3.871648943939766*^9}},
+ CellID->636026975,ExpressionUUID->"0ccd73f4-8beb-45cd-9caa-18310643fa2a"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["Sin",
+   BaseStyle->"Link"]], "InlineFormula",ExpressionUUID->
+  "5d9ff71e-708c-4630-9c51-9bd0c4ba844e"],
+ " \[RightArrow] ",
+ StyleBox["co-",
+  FontWeight->"Bold"],
+ " (yielding ",
+ Cell[BoxData[
+  ButtonBox["Cos",
+   BaseStyle->"Link"]], "InlineFormula",ExpressionUUID->
+  "60736ee4-f55f-41f5-9d75-5db8741ce9da"],
+ ") \[RightArrow] ",
+ StyleBox["ver-",
+  FontWeight->"Bold"],
+ " (yielding ",
+ Cell[BoxData[
+  ButtonBox["Vercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Vercosine"]], 
+  "InlineFormula",ExpressionUUID->"9e397d4a-5083-4749-8e2c-fd955750fe95"],
+ ") \[RightArrow] ",
+ StyleBox["co-",
+  FontWeight->"Bold"],
+ " (yielding ",
+ Cell[BoxData[
+  ButtonBox["Covercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Covercosine"]], 
+  "InlineFormula",ExpressionUUID->"3126f538-7b5a-4ad5-b770-63803b96cea8"],
+ ") \[RightArrow] ",
+ StyleBox["ha-",
+  FontWeight->"Bold"],
+ " (yielding ",
+ Cell[BoxData[
+  ButtonBox["Hacovercosine",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Hacovercosine"]], 
+  "InlineFormula",ExpressionUUID->"777053f6-a0f7-49da-a498-c51907895cf7"],
+ ")."
+}], "Text",
+ CellChangeTimes->{{3.871589119946306*^9, 3.871589297890401*^9}, {
+  3.8715893419795837`*^9, 3.87158936150994*^9}, {3.871590049384617*^9, 
+  3.871590133694551*^9}, {3.8715913072508993`*^9, 3.871591413859044*^9}, {
+  3.871591517945586*^9, 3.871591546483974*^9}, {3.871591601476925*^9, 
+  3.871591619037023*^9}, {3.871648930795486*^9, 3.871648931210339*^9}},
+ TextAlignment->Center,
+ CellID->134502072,ExpressionUUID->"ce61a1bc-946f-4b3c-8937-72c1f8e03191"],
+
+Cell["\<\
+In particular, two very different processes involving two instances of co- \
+plus one instance of ver- plus one instance of ha- both seem to yield the \
+same function, even though the operators were applied in a different order. \
+Is this typical? Does it matter in which order the operators applied when \
+creating new functions?\
+\>", "Text",
+ CellChangeTimes->{{3.871589119946306*^9, 3.871589297890401*^9}, {
+  3.8715893419795837`*^9, 3.87158936150994*^9}, {3.871590049384617*^9, 
+  3.871590133694551*^9}, {3.8715913072508993`*^9, 3.871591510006497*^9}, {
+  3.87159157818309*^9, 3.871591661395809*^9}, {3.871648954028204*^9, 
+  3.87164895857994*^9}, {3.871649003781505*^9, 3.871649065685976*^9}},
+ CellID->819949648,ExpressionUUID->"23ee0d1e-2d25-4cf8-a8ec-a9fedc8ccdcf"],
+
+Cell[TextData[{
+ "Well, it depends. Some operators ",
+ StyleBox["do",
+  FontSlant->"Italic"],
+ " \"commute\" (that is, yield the same result regardless of which order \
+they're applied) while some do not. For example, ha-co-sine would be ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"1", "/", "2"}], " ", 
+    RowBox[{"sin", "(", 
+     RowBox[{
+      RowBox[{"\[Pi]", "/", "2"}], "-", "z"}], ")"}]}], TraditionalForm]], 
+  "InlineMath",ExpressionUUID->"2dfa7a0f-0f4e-4ada-b44c-b5242eddd35e"],
+ " and so too would co-ha-sine. Conversely, ex-ver-sine would be ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"2", " ", 
+     RowBox[{
+      SuperscriptBox["sin", "2"], "(", 
+      RowBox[{"z", "/", "2"}], ")"}]}], "+", "1"}], TraditionalForm]], 
+  "InlineMath",ExpressionUUID->"47f003fa-ae2a-42a6-a54d-3e1f2e23dd71"],
+ " while ver-ex-sine would be ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"2", "\[InvisibleApplication]", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"sin", "(", 
+        RowBox[{"z", "/", "2"}], ")"}], "+", "1"}], ")"}], "2"]}], 
+   TraditionalForm]], "InlineMath",ExpressionUUID->
+  "7d1974d9-f272-48f4-8621-11f248d08c67"],
+ ", which is a different function altogether:"
+}], "Text",
+ CellChangeTimes->{{3.871589119946306*^9, 3.871589297890401*^9}, {
+  3.8715893419795837`*^9, 3.87158936150994*^9}, {3.871590049384617*^9, 
+  3.871590133694551*^9}, {3.8715913072508993`*^9, 3.871591510006497*^9}, {
+  3.8715915790759687`*^9, 3.871591581029314*^9}, {3.871591665227578*^9, 
+  3.871591994782743*^9}, {3.871593265163516*^9, 3.8715932667217817`*^9}, {
+  3.871646733137558*^9, 3.871646734119054*^9}, {3.8716490826952343`*^9, 
+  3.87164917312784*^9}},
+ CellID->1463777626,ExpressionUUID->"91c25a71-bc21-4d27-94d4-2d0ef53c47d5"],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {}, 
+    TagBox[
+     {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], Opacity[
+      1.], LineBox[CompressedData["
+1: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
+DJXPJcWX9BI6/N//m+H//9/8P7iUEy4=
+       "]]},
+     Annotation[#, "Charting`Private`Tag$959329#1"]& ], 
+    TagBox[
+     {RGBColor[0.880722, 0.611041, 0.142051], AbsoluteThickness[1.6], Opacity[
+      1.], LineBox[CompressedData["
+1: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
+DP4PZXdHlQ==
+       "]]},
+     Annotation[#, "Charting`Private`Tag$959329#2"]& ]}, {{{}, {
+      GraphicsGroupBox[{
+        {GrayLevel[1], AbsoluteThickness[4], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], CapForm["Butt"], JoinForm[
+         "Round"], 
+         BSplineCurveBox[{
+          Offset[{3, 0}, {10., 2.8390717511258154`}], 
+           Offset[{2.999999999806458, 0.000034077155209358135`}, {
+            10.816666666666666`, 2.8390717511258154`}], 
+           Offset[{0, 0}, {11.216786583483128`, 2.839074692700417}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {11.216786583483128`, 
+            2.839074692700417}], 
+           Offset[{10., 2.220446049250313*^-15}, {11.216786583483128`, 
+            2.839074692700417}], 
+           Offset[{10., 2.220446049250313*^-15}, {11.216786583483128`, 
+            2.839074692700417}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          AbsoluteThickness[1.25], 
+         BSplineCurveBox[{
+          Offset[{3, 0}, {10., 2.8390717511258154`}], 
+           Offset[{2.999999999806458, 0.000034077155209358135`}, {
+            10.816666666666666`, 2.8390717511258154`}], 
+           Offset[{0, 0}, {11.216786583483128`, 2.839074692700417}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {11.216786583483128`, 
+            2.839074692700417}], 
+           Offset[{10., 2.220446049250313*^-15}, {11.216786583483128`, 
+            2.839074692700417}], 
+           Offset[{10., 2.220446049250313*^-15}, {11.216786583483128`, 
+            2.839074692700417}]}]}, 
+        {EdgeForm[None], FaceForm[{GrayLevel[1], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]]}], 
+         PolygonBox[{
+          Offset[{65., 6.500000000000014}, {11.216786583483128`, 
+            2.839074692700417}], 
+           Offset[{65., -6.499999999999986}, {11.216786583483128`, 
+            2.839074692700417}], 
+           Offset[{10., -6.499999999999998}, {11.216786583483128`, 
+            2.839074692700417}], 
+           Offset[{10., 6.500000000000002}, {11.216786583483128`, 
+            2.839074692700417}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          AbsoluteThickness[1.25], EdgeForm[None]}, {}, InsetBox[
+         StyleBox[
+          RotationBox["\<\"ver-ex-sine\"\>",
+           BoxRotation->0.],
+          StripOnInput->False,
+          LineOpacity->1,
+          FrontFaceOpacity->1,
+          BackFaceOpacity->1,
+          Opacity->1,
+          FontOpacity->1], 
+         Offset[{37.5, 8.326672684688674*^-15}, \
+{11.216786583483128, 2.839074692700417}], NCache[
+         ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+          ImageScaled[{0.5, 0.5}]]]}], GraphicsGroupBox[{
+        {GrayLevel[1], AbsoluteThickness[4], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]], CapForm["Butt"], JoinForm[
+         "Round"], 
+         BSplineCurveBox[{
+          Offset[{3, 0}, {10., 0.0033744209123738557`}], 
+           Offset[{2.9999995368323393`, 0.0016670350176281672`}, {
+            10.816666666666666`, 0.0033744209123738557`}], 
+           Offset[{0, 0}, {11.216786583483128`, 0.003518321088143598}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {11.216786583483128`, 
+            0.003518321088143598}], 
+           Offset[{10., 2.220446049250313*^-15}, {11.216786583483128`, 
+            0.003518321088143598}], 
+           Offset[{10., 2.220446049250313*^-15}, {11.216786583483128`, 
+            0.003518321088143598}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          AbsoluteThickness[1.25], 
+         BSplineCurveBox[{
+          Offset[{3, 0}, {10., 0.0033744209123738557`}], 
+           Offset[{2.9999995368323393`, 0.0016670350176281672`}, {
+            10.816666666666666`, 0.0033744209123738557`}], 
+           Offset[{0, 0}, {11.216786583483128`, 0.003518321088143598}], 
+           Offset[{5., 1.1102230246251565`*^-15}, {11.216786583483128`, 
+            0.003518321088143598}], 
+           Offset[{10., 2.220446049250313*^-15}, {11.216786583483128`, 
+            0.003518321088143598}], 
+           Offset[{10., 2.220446049250313*^-15}, {11.216786583483128`, 
+            0.003518321088143598}]}]}, 
+        {EdgeForm[None], FaceForm[{GrayLevel[1], Opacity[
+          NCache[
+           Rational[2, 3], 0.6666666666666666]]}], 
+         PolygonBox[{
+          Offset[{65., 6.500000000000014}, {11.216786583483128`, 
+            0.003518321088143598}], 
+           Offset[{65., -6.499999999999986}, {11.216786583483128`, 
+            0.003518321088143598}], 
+           Offset[{10., -6.499999999999998}, {11.216786583483128`, 
+            0.003518321088143598}], 
+           Offset[{10., 6.500000000000002}, {11.216786583483128`, 
+            0.003518321088143598}]}]}, 
+        {RGBColor[0.6666666666666666, 0.6666666666666666, 0.6666666666666666],
+          AbsoluteThickness[1.25], EdgeForm[None]}, {}, InsetBox[
+         StyleBox[
+          RotationBox["\<\"ex-ver-sine\"\>",
+           BoxRotation->0.],
+          StripOnInput->False,
+          LineOpacity->1,
+          FrontFaceOpacity->1,
+          BackFaceOpacity->1,
+          Opacity->1,
+          FontOpacity->1], 
+         Offset[{37.5, 8.326672684688674*^-15}, \
+{11.216786583483128, 0.003518321088143598}], NCache[
+         ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+          ImageScaled[{0.5, 0.5}]]]}]}}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->{{All, 83.40215850269631}, {All, All}},
+  ImageSize->{341.45733642578125`, Automatic},
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, 
+    "DefaultGraphicsInteraction" -> {
+     "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+      "Effects" -> {
+       "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+        "Droplines" -> {
+         "freeformCursorMode" -> True, 
+          "placement" -> {"x" -> "All", "y" -> "None"}}}}, "DefaultMeshStyle" -> 
+    AbsolutePointSize[6], "ScalingFunctions" -> None, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{-10, 10}, {0., 7.999999778506661}},
+  PlotRangeClipping->False,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.08090169943749476]}},
+  Ticks->{Automatic, Automatic}]], "Text",
+ CellChangeTimes->{3.87159231706428*^9},
+ TextAlignment->Center,
+ CellID->1940690394,ExpressionUUID->"f6bc33df-b2d7-48ae-95e9-9fbcb84808d4"],
+
+Cell[TextData[{
+ "So, to summarize: Order ",
+ StyleBox["sometimes",
+  FontSlant->"Italic"],
+ " matters, and in general, one should expect that applying a series of \
+operators will result in a totally new function depending on which order is \
+chosen."
+}], "Text",
+ CellChangeTimes->{{3.87159236311698*^9, 3.871592369798449*^9}, {
+  3.871649180006956*^9, 3.87164921951394*^9}},
+ CellID->1201821322,ExpressionUUID->"8b086076-ad8d-4e18-b088-787ef40c5cae"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Other Functions Built from Sine", "Section",
+ CellChangeTimes->{{3.87134152831812*^9, 3.8713415351911993`*^9}},
+ CellID->919349419,ExpressionUUID->"ab6f04de-4453-4101-adb9-05259b71b019"],
+
+Cell[TextData[{
+ "The Trigonometry paclet also contains functions built from ",
+ Cell[BoxData[
+  ButtonBox["Sin",
+   BaseStyle->"Link"]], "InlineFormula",ExpressionUUID->
+  "fb765854-b91e-49da-9f5c-a0b0126d3484"],
+ " which don't come from the four operators above."
+}], "Text",
+ CellChangeTimes->{{3.871341539485372*^9, 3.871341540420806*^9}, {
+   3.871649225599618*^9, 3.871649250623246*^9}, 3.8716493966213627`*^9},
+ CellID->2035329466,ExpressionUUID->"f29b9023-fe41-48a0-961a-141f87c9b646"],
+
+Cell[BoxData[GridBox[{
+   {
+    RowBox[{
+     ButtonBox["Chord",
+      BaseStyle->"Link",
+      ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Chord"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the chord function, ",
+     Cell[BoxData[
+      FormBox[
+       RowBox[{
+        RowBox[{"chord", "(", "z", ")"}], "=", 
+        RowBox[{"2", " ", 
+         RowBox[{"sin", "(", 
+          RowBox[{"z", "/", "2"}], ")"}]}]}], TraditionalForm]], "InlineMath",
+      ExpressionUUID->"c88a21c7-2646-49aa-be83-6212390e3b62"]
+    }], "TableText",ExpressionUUID->"a03cbbb5-aecc-4eb1-a86d-4d64c4eed634"]},
+   {
+    RowBox[{
+     ButtonBox["InverseChord",
+      BaseStyle->"Link",
+      ButtonData->"paclet:TheRealCStover/Trigonometry/ref/InverseChord"], "[", 
+     StyleBox["z", "TI"], "]"}], Cell[TextData[{
+     "the inverse of ",
+     Cell[BoxData[
+      RowBox[{
+       ButtonBox["Chord",
+        BaseStyle->"Link",
+        ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Chord"], "[", 
+       StyleBox["z", "TI"], "]"}]], "InlineFormula",ExpressionUUID->
+      "f056a788-a463-4f56-90e4-2806fd9d2142"]
+    }], "TableText",ExpressionUUID->"6f92d48b-4850-426b-a810-d96414f1801a"]}
+  }]], "DefinitionBox",
+ CellChangeTimes->{{3.8716492545839987`*^9, 3.87164928731625*^9}, {
+  3.871649329730595*^9, 3.871649364653804*^9}},
+ CellID->544400827,ExpressionUUID->"9a0c9804-780b-4f57-9d1f-42ac370e812c"],
+
+Cell[TextData[{
+ "The chord function is derived from ",
+ Cell[BoxData[
+  ButtonBox["Sin",
+   BaseStyle->"Link"]], "InlineFormula",ExpressionUUID->
+  "67515b95-bb42-42fc-9dd1-e048bb3a1d4b"],
+ " but does not involve the four operators discussed above."
+}], "Caption",
+ CellChangeTimes->{{3.871649369579021*^9, 3.871649388928934*^9}},
+ CellID->1464363169,ExpressionUUID->"6d6b5c57-1d7e-406c-9222-0bac79ec63ac"],
+
+Cell[TextData[{
+ "Mathematically, the chord of an angle is the length of the chord between \
+two points on a unit circle separated by that central angle. As such, the ",
+ Cell[BoxData[
+  ButtonBox["Chord",
+   BaseStyle->"Link",
+   ButtonData->"paclet:TheRealCStover/Trigonometry/ref/Chord"]], 
+  "InlineFormula",ExpressionUUID->"dc3ee593-c632-4982-b8db-4c9e4e2efbec"],
+ " function can be expressed in terms of ",
+ Cell[BoxData[
+  ButtonBox["Sin",
+   BaseStyle->"Link"]], "InlineFormula",ExpressionUUID->
+  "9b58babb-d9a4-4d59-bd15-12c32994f87c"],
+ " (as shown above), ",
+ Cell[BoxData[
+  ButtonBox["Cos",
+   BaseStyle->"Link"]], "InlineFormula",ExpressionUUID->
+  "3843c930-67e6-46be-8ee1-0df32a816535"],
+ ", and others in a variety of ways:"
+}], "Text",
+ CellChangeTimes->{{3.871649563751492*^9, 3.871649597159657*^9}, {
+  3.871649693487721*^9, 3.8716496947018747`*^9}, {3.871650932883367*^9, 
+  3.871650942741725*^9}},
+ CellID->2086621461,ExpressionUUID->"69f17e18-a018-4d87-a791-d4f1d950e5ee"],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"chord", "(", "z", ")"}], "=", 
+   RowBox[{
+    RowBox[{"2", " ", 
+     RowBox[{"sin", "(", 
+      RowBox[{"z", "/", "2"}], ")"}]}], "=", 
+    RowBox[{
+     SqrtBox[
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["sin", "2"], "(", "z", ")"}], "+", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"1", "-", 
+          RowBox[{"cos", "(", "z", ")"}]}], ")"}], "2"]}]], "=", 
+     RowBox[{
+      RowBox[{"2", " ", 
+       SqrtBox[
+        RowBox[{"2", "-", 
+         RowBox[{"2", " ", 
+          RowBox[{"cos", "(", "z", ")"}]}]}]]}], "=", 
+      "\[CenterEllipsis]"}]}]}]}], 
+  TraditionalForm]], \
+"InlineMath",ExpressionUUID->"6a53d634-7ac9-488f-9397-de38ea2e128b"]], "Text",\
+
+ CellChangeTimes->{{3.87164959961663*^9, 3.871649709657744*^9}},
+ TextAlignment->Center,
+ CellID->1132627033,ExpressionUUID->"b04c0a0f-0696-483d-bbeb-f92e96c34d8f"],
+
+Cell["\<\
+In addition, the chord function satisfies a number of Pythagorean-like \
+identities and could ostensibly be used in conjunction with the four \
+operators above to derive other possibly-useful functions as well.\
+\>", "Text",
+ CellChangeTimes->{{3.871649724362249*^9, 3.87164976726455*^9}},
+ CellID->1366733955,ExpressionUUID->"bd7eeebf-5822-4dd2-b865-4ed7791f1222"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "TutorialMoreAboutSection",
+ CellChangeTimes->{{3.843042384656711*^9, 3.843042386024461*^9}},
+ CellID->1271018393,ExpressionUUID->"5a95b713-f136-4e66-a985-cd6e5518da79"],
+
+Cell[TextData[ButtonBox["Trigonometry",
+ BaseStyle->"Link",
+ ButtonData->
+  "paclet:TheRealCStover/Trigonometry/guide/Trigonometry"]], \
+"TutorialMoreAbout",
+ CellChangeTimes->{{3.871650547360615*^9, 3.871650580022523*^9}},
+ CellID->986294442,ExpressionUUID->"b3e1d0bb-262d-41af-a3cb-0d4692b22e0d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Tech Notes", "RelatedTutorialsSection",
+ CellID->224415501,ExpressionUUID->"759c1f44-9086-4711-94f2-eb8ce82e5a92"],
+
+Cell["XXXX", "RelatedTutorials",
+ CellID->770041175,ExpressionUUID->"e504e1c4-5fa4-4695-b91a-16f66a474f5d"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Metadata", "MetadataSection",
+ CellID->1345571403,ExpressionUUID->"1dbeaf8c-4207-4dd5-a3fc-0f4eb87930aa"],
+
+Cell[TextData[{
+ "New in: ",
+ Cell["??", "HistoryData",
+  CellTags->"New",ExpressionUUID->"ef09b5f8-904c-475a-b44b-b11c06f6a985"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified",ExpressionUUID->"e67c9e71-3047-4b99-b862-eeb2c606c74f"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete",ExpressionUUID->
+  "d4888990-1c6a-46cd-a2ee-839d62297813"]
+}], "History",
+ CellID->2015767311,ExpressionUUID->"87415ed4-7f5d-4d1a-904e-694b9718f24d"],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->299180905,ExpressionUUID->"a9236134-c4ca-4484-8415-645decc0bbd3"],
+
+Cell["Tech Note", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->1074252708,ExpressionUUID->"feda5cd9-1f64-49f2-8fd8-1210b35989e5"],
+
+Cell["TheRealCStover/Trigonometry", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->1070243027,ExpressionUUID->"c5394ce1-d7de-4bbb-8120-2c74e2c3cc76"],
+
+Cell["TheRealCStover`Trigonometry`", "Categorization",
+ CellLabel->"Context",
+ CellID->251527517,ExpressionUUID->"75ea61a2-98b7-43b6-bbac-55b6bdf5c21d"],
+
+Cell["\<\
+TheRealCStover/Trigonometry/tutorial/Trig Functions and Naming Conventions\
+\>", "Categorization",
+ CellChangeTimes->{{3.871337744334474*^9, 3.8713377710761013`*^9}},
+ CellLabel->"URI",
+ CellID->1175160923,ExpressionUUID->"043be398-fed0-4854-a09b-1e1f1847d27b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->522531402,ExpressionUUID->"8b6d201e-6379-4def-b6ef-abb6ae973f2c"],
+
+Cell["XXXX", "Keywords",
+ CellID->1124640831,ExpressionUUID->"6e0de228-f31c-424a-ae84-6f8d7dc9e66e"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{Automatic, 197}, {Automatic, 0}},
+TaggingRules->{
+ "DocuToolsSettingsInternal" -> {
+   "$PacletVersion" -> "0.10.2121", "$MVersion" -> "12", "$FlaggedVersion" -> 
+    11.3}, "WelcomeScreenSettings" -> {"FEStarting" -> False}, "Paclet" -> 
+  "TheRealCStover/Trigonometry"},
+FrontEndVersion->"13.1 for Mac OS X x86 (64-bit) (June 16, 2022)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "TechNotePageStylesExt.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"78a62e3c-bcf2-46f7-84e0-067562d764e2"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 222, 3, 114, "Title",ExpressionUUID->"3c546d06-8bd0-4aaa-a056-e685189a58a9",
+ CellID->894678052],
+Cell[805, 27, 371, 6, 44, "Text",ExpressionUUID->"48bff96d-4dff-48ff-badb-f08bfbf1df30",
+ CellID->173523670],
+Cell[CellGroupData[{
+Cell[1201, 37, 307, 4, 45, "Section",ExpressionUUID->"5592cf07-d3a7-44e0-bdb2-bf78d367c266",
+ CellID->1684678348],
+Cell[1511, 43, 541, 11, 44, "Text",ExpressionUUID->"cfe2fb80-6ac1-4ff8-aa6d-a16075e6c56a",
+ CellID->1795696577],
+Cell[2055, 56, 1032, 26, 76, "DefinitionBox",ExpressionUUID->"fb70d878-4644-4d26-a4da-9dd3f7099be1",
+ CellID->129529064],
+Cell[3090, 84, 309, 6, 30, "Caption",ExpressionUUID->"dd8cdcb3-1580-4045-91b5-45f13e9b94ec",
+ CellID->1594044237],
+Cell[3402, 92, 816, 12, 63, "Text",ExpressionUUID->"550458f3-b6a2-4bcd-a340-e10ce01db559",
+ CellID->1190002665]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4255, 109, 400, 5, 45, "Section",ExpressionUUID->"d81c1e13-1497-49f4-8283-58b6b44665f9",
+ CellID->1986505663],
+Cell[4658, 116, 1010, 15, 82, "Text",ExpressionUUID->"afc205d2-e4f7-48b2-91d5-21e63862ae29",
+ CellID->830071450],
+Cell[CellGroupData[{
+Cell[5693, 135, 398, 9, 39, "Subsection",ExpressionUUID->"2b0f31c5-82e1-4bce-a28e-0d087ffa271a",
+ CellID->1350321043],
+Cell[6094, 146, 1346, 35, 25, "Text",ExpressionUUID->"38ed4d72-112e-458f-932d-3cf088da73e4",
+ CellID->238588205],
+Cell[7443, 183, 801, 15, 48, "Text",ExpressionUUID->"4e0ddd88-ece0-49ca-ac37-964d92a1fcbb",
+ CellID->1247576760],
+Cell[8247, 200, 1444, 35, 90, "DefinitionBox",ExpressionUUID->"307b3bdf-6d19-4805-8f77-bb4de9a1ba8b",
+ CellID->1225900096],
+Cell[9694, 237, 313, 4, 30, "Caption",ExpressionUUID->"ff834e0d-ba90-448f-aad5-8ea2febb2879",
+ CellID->744804154],
+Cell[10010, 243, 306, 6, 25, "Text",ExpressionUUID->"299f1193-ce96-437d-b2ba-7a67fe464ae6",
+ CellID->1880658193],
+Cell[10319, 251, 1997, 55, 132, "DefinitionBox",ExpressionUUID->"af0a06b3-a0c6-45c7-a8a1-65e2d67d38d2",
+ CellID->2145807156],
+Cell[12319, 308, 241, 4, 30, "Caption",ExpressionUUID->"a5b90f19-77f4-4811-aa99-ea6c9d9c8a65",
+ CellID->1887986821],
+Cell[12563, 314, 664, 11, 25, "Text",ExpressionUUID->"bc98c8cc-5260-43b8-a07f-16883ac27e46",
+ CellID->1581265903],
+Cell[13230, 327, 2100, 57, 132, "DefinitionBox",ExpressionUUID->"14b96cd7-55b8-4c92-8625-12d86d036cbd",
+ CellID->1750995856],
+Cell[15333, 386, 310, 6, 30, "Caption",ExpressionUUID->"34f46641-fa33-42a5-81f0-1939340e2c8d",
+ CellID->2018936951],
+Cell[15646, 394, 659, 11, 44, "Text",ExpressionUUID->"86f21118-6ba4-4129-93d0-babef7261ed4",
+ CellID->1196771326]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16342, 410, 348, 8, 39, "Subsection",ExpressionUUID->"8a604f1f-8e49-474f-8dd0-572e44dc5f2b",
+ CellID->1415315046],
+Cell[16693, 420, 1380, 36, 26, "Text",ExpressionUUID->"b2882e9a-8a30-4779-b0be-6c8de8ba8410",
+ CellID->123326853],
+Cell[18076, 458, 490, 8, 44, "Text",ExpressionUUID->"0215999c-441f-4842-9a46-1a979c379a45",
+ CellID->342174885],
+Cell[18569, 468, 2775, 72, 134, "DefinitionBox",ExpressionUUID->"d43737ea-8474-4a78-bd18-168e49893315",
+ CellID->1821204584],
+Cell[21347, 542, 239, 3, 30, "Caption",ExpressionUUID->"b2fa0cd7-0154-41ed-b394-6e9929bfbff5",
+ CellID->901022597],
+Cell[21589, 547, 1550, 40, 68, "Text",ExpressionUUID->"45bd59a6-eea8-46de-9cff-5b6464f82db0",
+ CellID->2119569176],
+Cell[23142, 589, 2268, 59, 90, "Text",ExpressionUUID->"c1b7e5b9-8f4c-4a39-bb63-e84a015e1c89",
+ CellID->1348439880],
+Cell[25413, 650, 2756, 75, 146, "DefinitionBox",ExpressionUUID->"c14c4445-e8df-4a9b-b5f1-3b244bbdc258",
+ CellID->666901972],
+Cell[28172, 727, 230, 4, 30, "Caption",ExpressionUUID->"072c0602-720b-4cac-a110-ae1153d73fe1",
+ CellID->904289711]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28439, 736, 420, 9, 39, "Subsection",ExpressionUUID->"b8ce696b-5087-4ead-88ff-9538da284bd6",
+ CellID->906556815],
+Cell[28862, 747, 1286, 36, 25, "Text",ExpressionUUID->"d7a4c3a4-bd2b-4e75-8840-5e838eb834e1",
+ CellID->1709079176],
+Cell[30151, 785, 1477, 32, 90, "Text",ExpressionUUID->"849acd47-c0b0-43f9-89b9-f539c09faf38",
+ CellID->660114305],
+Cell[31631, 819, 3537, 85, 170, "DefinitionBox",ExpressionUUID->"87cda49e-b94b-47a1-ac6a-cc15731c2166",
+ CellID->104081891],
+Cell[35171, 906, 508, 9, 30, "Caption",ExpressionUUID->"5391d822-26b6-49d0-b723-aef2e8196ce2",
+ CellID->1252653379],
+Cell[35682, 917, 587, 10, 44, "Text",ExpressionUUID->"190373f1-b721-4f45-9ec1-6e500d683e94",
+ CellID->640603733],
+Cell[36272, 929, 6962, 185, 368, "DefinitionBox",ExpressionUUID->"c758177c-338c-4296-ba54-cf867a3ecd74",
+ CellID->1678984977],
+Cell[43237, 1116, 305, 7, 30, "Caption",ExpressionUUID->"8ceb4990-873f-411c-8cb3-e29941697c2f",
+ CellID->765386859]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43579, 1128, 349, 8, 39, "Subsection",ExpressionUUID->"8c32c786-f276-427b-9f89-61f92533a9d8",
+ CellID->1685660051],
+Cell[43931, 1138, 1141, 31, 44, "Text",ExpressionUUID->"46679003-b8a4-4f12-9ffc-14b819032b86",
+ CellID->1277534367],
+Cell[45075, 1171, 595, 9, 44, "Text",ExpressionUUID->"6f682337-ed3c-4623-8a02-dc7e865a9127",
+ CellID->726428311],
+Cell[45673, 1182, 2710, 67, 132, "DefinitionBox",ExpressionUUID->"1eb34f21-fa54-4800-a264-f874bfd136f9",
+ CellID->636089782],
+Cell[48386, 1251, 284, 4, 30, "Caption",ExpressionUUID->"71e027b6-f3bf-4e6f-8bd3-7a7f7e8e6143",
+ CellID->1713012049]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[48719, 1261, 274, 3, 45, "Section",ExpressionUUID->"8d497b87-ac88-4bda-9548-e4f454b8cd6c",
+ CellID->560838859],
+Cell[48996, 1266, 364, 6, 44, "Text",ExpressionUUID->"5c1b8ee3-d82f-4c35-8a15-497151f9cfb4",
+ CellID->1402759867],
+Cell[49363, 1274, 1220, 38, 29, "Text",ExpressionUUID->"2d26ac88-db35-4f55-8588-3be398a63b6f",
+ CellID->101188113],
+Cell[50586, 1314, 634, 13, 48, "Text",ExpressionUUID->"58678c9e-52cb-4bfc-9c0a-dd70f2188e29",
+ CellID->2021969787],
+Cell[51223, 1329, 724, 11, 63, "Text",ExpressionUUID->"92a95943-1736-4cad-9efd-05bdc09f5793",
+ CellID->1161796311],
+Cell[51950, 1342, 1954, 39, 143, "Text",ExpressionUUID->"b48623b0-5617-48c5-bd49-ce057b17c342",
+ CellID->1676513500],
+Cell[53907, 1383, 958, 19, 52, "Text",ExpressionUUID->"0ccd73f4-8beb-45cd-9caa-18310643fa2a",
+ CellID->636026975],
+Cell[54868, 1404, 1698, 48, 52, "Text",ExpressionUUID->"ce61a1bc-946f-4b3c-8937-72c1f8e03191",
+ CellID->134502072],
+Cell[56569, 1454, 784, 12, 63, "Text",ExpressionUUID->"23ee0d1e-2d25-4cf8-a8ec-a9fedc8ccdcf",
+ CellID->819949648],
+Cell[57356, 1468, 1770, 43, 83, "Text",ExpressionUUID->"91c25a71-bc21-4d27-94d4-2d0ef53c47d5",
+ CellID->1463777626],
+Cell[59129, 1513, 47443, 822, 175, "Text",ExpressionUUID->"f6bc33df-b2d7-48ae-95e9-9fbcb84808d4",
+ CellID->1940690394],
+Cell[106575, 2337, 453, 10, 44, "Text",ExpressionUUID->"8b086076-ad8d-4e18-b088-787ef40c5cae",
+ CellID->1201821322]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[107065, 2352, 192, 2, 45, "Section",ExpressionUUID->"ab6f04de-4453-4101-adb9-05259b71b019",
+ CellID->919349419],
+Cell[107260, 2356, 493, 10, 48, "Text",ExpressionUUID->"f29b9023-fe41-48a0-961a-141f87c9b646",
+ CellID->2035329466],
+Cell[107756, 2368, 1410, 35, 76, "DefinitionBox",ExpressionUUID->"9a0c9804-780b-4f57-9d1f-42ac370e812c",
+ CellID->544400827],
+Cell[109169, 2405, 407, 9, 33, "Caption",ExpressionUUID->"6d6b5c57-1d7e-406c-9222-0bac79ec63ac",
+ CellID->1464363169],
+Cell[109579, 2416, 996, 23, 71, "Text",ExpressionUUID->"69f17e18-a018-4d87-a791-d4f1d950e5ee",
+ CellID->2086621461],
+Cell[110578, 2441, 924, 29, 31, "Text",ExpressionUUID->"b04c0a0f-0696-483d-bbeb-f92e96c34d8f",
+ CellID->1132627033],
+Cell[111505, 2472, 375, 6, 44, "Text",ExpressionUUID->"bd7eeebf-5822-4dd2-b865-4ed7791f1222",
+ CellID->1366733955]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[111917, 2483, 192, 2, 74, "TutorialMoreAboutSection",ExpressionUUID->"5a95b713-f136-4e66-a985-cd6e5518da79",
+ CellID->1271018393],
+Cell[112112, 2487, 298, 6, 24, "TutorialMoreAbout",ExpressionUUID->"b3e1d0bb-262d-41af-a3cb-0d4692b22e0d",
+ CellID->986294442]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[112447, 2498, 128, 1, 74, "RelatedTutorialsSection",ExpressionUUID->"759c1f44-9086-4711-94f2-eb8ce82e5a92",
+ CellID->224415501],
+Cell[112578, 2501, 107, 1, 24, "RelatedTutorials",ExpressionUUID->"e504e1c4-5fa4-4695-b91a-16f66a474f5d",
+ CellID->770041175]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[112734, 2508, 111, 1, 72, "MetadataSection",ExpressionUUID->"1dbeaf8c-4207-4dd5-a3fc-0f4eb87930aa",
+ CellID->1345571403],
+Cell[112848, 2511, 477, 12, 26, "History",ExpressionUUID->"87415ed4-7f5d-4d1a-904e-694b9718f24d",
+ CellID->2015767311],
+Cell[CellGroupData[{
+Cell[113350, 2527, 122, 1, 21, "CategorizationSection",ExpressionUUID->"a9236134-c4ca-4484-8415-645decc0bbd3",
+ CellID->299180905],
+Cell[113475, 2530, 138, 2, 34, "Categorization",ExpressionUUID->"feda5cd9-1f64-49f2-8fd8-1210b35989e5",
+ CellID->1074252708],
+Cell[113616, 2534, 156, 2, 34, "Categorization",ExpressionUUID->"c5394ce1-d7de-4bbb-8120-2c74e2c3cc76",
+ CellID->1070243027],
+Cell[113775, 2538, 152, 2, 34, "Categorization",ExpressionUUID->"75ea61a2-98b7-43b6-bbac-55b6bdf5c21d",
+ CellID->251527517],
+Cell[113930, 2542, 271, 5, 34, "Categorization",ExpressionUUID->"043be398-fed0-4854-a09b-1e1f1847d27b",
+ CellID->1175160923]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[114238, 2552, 110, 1, 31, "KeywordsSection",ExpressionUUID->"8b6d201e-6379-4def-b6ef-abb6ae973f2c",
+ CellID->522531402],
+Cell[114351, 2555, 100, 1, 20, "Keywords",ExpressionUUID->"6e0de228-f31c-424a-ae84-6f8d7dc9e66e",
+ CellID->1124640831]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
