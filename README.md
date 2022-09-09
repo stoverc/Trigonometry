@@ -1,5 +1,5 @@
 # Trigonometry
-[My](https://resources.wolframcloud.com/publishers/resources?PublisherID=TheRealCStover) `Trigonometry` paclet for [The Wolfram Paclet Repository](https://resources.wolframcloud.com/PacletRepository). <sup>([published documentation](https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/))</sup><sup>([bleeding-edge beta documentation](https://www.wolframcloud.com/obj/cstover/DeployedResources/Paclet/TheRealCStover/Trigonometry/Documentation/guide/Trigonometry.html)</sup>
+[My](https://resources.wolframcloud.com/publishers/resources?PublisherID=TheRealCStover) `Trigonometry` paclet for [The Wolfram Paclet Repository](https://resources.wolframcloud.com/PacletRepository). <sup>([published docs](https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/))</sup><sup>([bleeding-edge docs](https://www.wolframcloud.com/obj/cstover/DeployedResources/Paclet/TheRealCStover/Trigonometry/Documentation/guide/Trigonometry.html)</sup>
 
 <table>
   <tr>
