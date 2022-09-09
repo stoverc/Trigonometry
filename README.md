@@ -1,5 +1,5 @@
 # Trigonometry
-[My](https://resources.wolframcloud.com/publishers/resources?PublisherID=TheRealCStover) `Trigonometry` paclet for [The Wolfram Paclet Repository](https://resources.wolframcloud.com/PacletRepository). <sup>([documentation](https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/))</sup>
+[My](https://resources.wolframcloud.com/publishers/resources?PublisherID=TheRealCStover) `Trigonometry` paclet for [The Wolfram Paclet Repository](https://resources.wolframcloud.com/PacletRepository). <sup>([published documentation](https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/))</sup><sup>([bleeding-edge beta documentation](https://www.wolframcloud.com/obj/cstover/DeployedResources/Paclet/TheRealCStover/Trigonometry/Documentation/guide/Trigonometry.html)</sup>
 
 <table>
   <tr>
@@ -21,19 +21,37 @@
 ## TODO
 * Consider changing earlier documentation (e.g. <code>Versine</code>) to say "...is defined in terms of..." instead of immediately going with "...can be represented in terms of..." to mimic the way that <code>Inverse*</code> documentation is phrased.
 * Add in historical examples of why people ever studied these functions (i.e. Google <code>versine</code> and see mapping, etc., uses that can be copied over).
-* Check the hyperbolic functions for accuracy.
-* Implement inverse hyperbolic functions
-* Create and fill in the doc pages for the hyperbolic functions and their inverses.
+* Also add in some of the trig identities mentioned in various Wiki pages, etc.
+* Consider mentioning various abbreviations, etc. for the functions
+* Fill in the doc pages for the hyperbolic functions and their inverses.
 * Continue honing main page shingle info, examples, etc.
-* Check the <code>Future</code>'d documentation blocks and try to do the math to figure out more complex relationships between functions.
+* Check the <code>Future</code>'d documentation blocks and try to do the math to figure out more complex relationships between functions. This should particularly relate circular functions with imaginary arguments to their hyperbolic analogues.
 * Include <code>cis(z)</code>? [link](https://en.wikipedia.org/wiki/Cis_(mathematics))
 * Include various definitions of so-called <i>parabolic trig functions</i>.
 * Maybe later in Tech Note, consider incorporating some of the below-mentioned _juicy trig-related tidbits_ when the time is right.
-* Consider best implementation of <code>VerCofHaf</code> as shown in image. Also, <code>Ex</code>, etc.
+* Consider best implementation of <code>CoVerHa</code> as shown in image. Also, <code>Ex</code>, including $tan$ in some functions, etc.
 * Also include other juicy trig-related tidbits that prove useful!
 
 <details>
 <summary><h2>Changelog</h2></summary>
+  <details>
+  <summary><h4>8-9 Sep 2022</h4></summary>
+  <ol>
+    <li>Fixed a math typo in the Tech Note.</li>
+    <li>Added some identities to the <code>Chord</code> function.</li>
+    <li>Added a link to MacTutor History to the main shingle page.</li>
+    <li>Made some small verbiage edits to the main shingle summary blob thing.</li>
+    <li>Checked the math for + implemented the <code>InverseHyperbolic*</code> functions.
+    <li>Added blank documentation for all <code>Hyperbolic*</code>, <code>InverseHyperbolic*</code> functions.</li>
+    <li>Made some changes to the existing Guide page.</li>
+    <li>Linked the new (blank) <code>Hyperbolic*</code>, <code>InverseHyperbolic*</code> function documentation to the Guide page.</li>
+    <li>Added Chord Wiki link to main shingle page.</li>
+    <li>Copied links from main shingle page to Guide page.</li>
+    <li>Slightly modified some Guide Page verbiage.</li>
+    <li>Adjusted keywords on main shingle page.</li>
+    <li>Published v2.0.0 in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
+  </ol>
+  </details>
   <details>
   <summary><h4>5-8 Sep 2022</h4></summary>
   <ol>
@@ -46,7 +64,7 @@
     <li>Fixed a metadata link issue in one of the doc pages.</li>
     <li>Added "See Also" to <code>Hacoversine</code> and <code>Hacovercosine</code>.
     <li>Later, edited <code>README.md</code> to link to versioned shingles as available (versions before v1.0.7 are not available).
-    <li>Published v1.2.0 in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
+    <li>Published v1.2.0 in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/version/1.2.0/">link</a>)</li>
   </ol>
   </details>
   <details> 

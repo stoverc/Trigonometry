@@ -90,7 +90,17 @@ Begin["`Private`"];
 	InverseHacovercosine[y_]:=ArcSin[2y-1]; InverseCohavercosine[y_]:=ArcSin[2y-1];
 	InverseExsecant[y_]:=ArcSec[y+1]; InverseExcosecant[y_]:=ArcCsc[y+1]; InverseChord[y_]:=2ArcSin[y/2];
 	
-	(* TODO: Check InverseHyperbolics.... *)
+	(*=== Hyperbolic Inverses ===*)
+	InverseHyperbolicVersine[y_]:=ArcCosh[1-y];
+	InverseHyperbolicVercosine[y_]:=ArcCosh[y-1];
+	InverseHyperbolicHaversine[y_]:=ArcCosh[1-2y];
+	InverseHyperbolicHavercosine[y_]:=ArcCosh[2y-1];
+	InverseHyperbolicCoversine[y_]:=ArcSinh[1-y];
+	InverseHyperbolicCovercosine[y_]:=ArcSinh[y-1];
+	InverseHyperbolicHacoversine[y_]:=ArcSinh[1-2y]; InverseHyperbolicCohaversine[y_]:=ArcSinh[1-2y];
+	InverseHyperbolicHacovercosine[y_]:=ArcSinh[2y-1]; InverseHyperbolicCohavercosine[y_]:=ArcSinh[2y-1];
+	InverseHyperbolicExsecant[y_]:=ArcSech[y+1]; InverseHyperbolicExcosecant[y_]:=ArcCsch[y+1]; InverseHyperbolicChord[y_]:=2ArcSinh[y/2];
+	
 	(* TODO: Extend to tan, sec, csc, cot? *)
 
 End[]; (* End `Private` *)
