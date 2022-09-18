@@ -7,7 +7,7 @@ PacletObject[
     "Creator" -> "Christopher Stover",
     "License" -> "MIT",
     "PublisherID" -> "TheRealCStover",
-    "Version" -> "2.0.0",
+    "Version" -> "2.2.0",
     "WolframVersion" -> "13+",
     "Extensions" -> {
       {

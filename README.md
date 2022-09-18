@@ -1,5 +1,5 @@
 # Trigonometry
-[My](https://resources.wolframcloud.com/publishers/resources?PublisherID=TheRealCStover) `Trigonometry` paclet for [The Wolfram Paclet Repository](https://resources.wolframcloud.com/PacletRepository). <sup>([published docs](https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/))</sup><sup>([bleeding-edge docs](https://www.wolframcloud.com/obj/cstover/DeployedResources/Paclet/TheRealCStover/Trigonometry/Documentation/guide/Trigonometry.html))</sup>
+[My](https://resources.wolframcloud.com/publishers/resources?PublisherID=TheRealCStover) `Trigonometry` paclet for [The Wolfram Paclet Repository](https://resources.wolframcloud.com/PacletRepository). <sup>([published docs](https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/))</sup><sup>([bleeding-edge docs](https://www.wolframcloud.com/obj/cstover/DeployedResources/Paclet/TheRealCStover/Trigonometry/))</sup>
 
 <table>
   <tr>
@@ -35,6 +35,15 @@
 <details>
 <summary><h2>Changelog</h2></summary>
   <details>
+  <summary><h4>17 Sep 2022</h4></summary>
+  <ol>
+    <li>Made first draft of <code>HyperbolicVersine</code> documentation.</li>
+    <li>Per bullet 1 in above TODO: Fixed some lead-in text in <code>Versine</code> page.</li>
+    <li>Unfuturized a code block in <code>Versine</code> doc.</li>
+    <li>Published v2.2.0 <sup>(v2.1.0 glitched mid-publish)</sup> in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
+  </ol>
+  </details>
+  <details>
   <summary><h4>8-9 Sep 2022</h4></summary>
   <ol>
     <li>Fixed a math typo in the Tech Note.</li>
@@ -49,7 +58,7 @@
     <li>Copied links from main shingle page to Guide page.</li>
     <li>Slightly modified some Guide Page verbiage.</li>
     <li>Adjusted keywords on main shingle page.</li>
-    <li>Published v2.0.0 in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/">link</a>)</li>
+    <li>Published v2.0.0 in the Paclet Repo: (<a href = "https://resources.wolframcloud.com/PacletRepository/resources/TheRealCStover/Trigonometry/version/2.0.0/">link</a>)</li>
   </ol>
   </details>
   <details>
